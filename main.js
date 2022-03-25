@@ -1,257 +1,770 @@
 "use strict"
 
-// let arr  = [];
+// let test = 11;
+// if(test > 10){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
 
-// let arr = ["пн","вт","ср","чт","пт","сб","вс"];
+// let test = 9;
+// if(test < 10){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
 
-// let arr = [1,2,3];
+// let test = 11;
+// if(test => 10){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
 
-// let arr = [1,2,'a','b', null, true, false];
+// let test = 8;
+// if (test <= 10){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
 
-// let arr = ['a', 'b', 'c'];
-// alert(arr);
-// console.log(arr);
+// let test = 10;
+// if(test == 10){
+//     alert('Верно');
+// } else {
+//     alert('Неверно')
+// }
 
-// let arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-// console.log(arr[0]);
-// console.log(arr[1]);
-// console.log(arr[2]);
+// let test = 9;
+// if(test != 10){
+//     alert('Верно');
+// } else{
+//     alert('Неверно');
+// }
 
-// let arr = ["a", "b", "с"];
-// console.log(arr[0]);
-// console.log(arr[1]);
-// console.log(arr[2]);
+// let test1 = 3, test2 = 4;
+// if(test1 > test2){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
 
-// let arr = ["a","b","c","d"];
-// console.log(arr[0]+"+"+arr[1]+"+"+arr[2]+"+"+arr[3]);
+// let test1 = '3';
+// let test2 = '3';
+// if (test1 == test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
 
-// let arr = [1,2,3];
-// console.log(arr[0]+arr[1]+arr[2]);
+// let test1 = '3';
+// let test2 = '3';	
+// if (test1 === test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
 
-// let arr = [2,5,3,9];
-// let result = arr[0]*arr[1]+arr[2]*arr[3];
+// let test1 = 3;
+// let test2 = '3';
+// if (test1 == test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = 3;
+// let test2 = '3';
+// if (test1 === test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = 3;
+// let test2 = 3;
+// if (test1 === test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = '3';
+// let test2 = '3';
+// if (test1 != test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = '3';
+// let test2 = '3';
+// if (test1 !== test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = 3;
+// let test2 = '3';
+// if (test1 != test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = 3;
+// let test2 = '3';	
+// if (test1 !== test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test1 = 3;
+// let test2 = 2;
+// if (test1 !== test2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 11;
+// if(num >=10 && num <= 20){
+//     alert('верно');
+// } else {
+//     alert('неверно');
+// }
+
+// let num =12;
+// if(num > 0 && num < 5){
+//     alert('Верно');
+// } else {
+//     alert('Неверно');
+// }
+
+// let num1 = -10;
+// let num2 = -10;
+// if (num1 >= 0 || num2 >= 0) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num1 = 0;
+// let num2 = 0;
+// if (num1 >= 0 || num2 >= 0) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num1 = 0;
+// let num2 = 5;
+// if (num1 >= 0 || num2 >= 0) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num1 = 5;
+// let num2 = 5;
+// if (num1 >= 0 || num2 >= 0) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num1 = -5;
+// let num2 = 15;
+// if (num1 >= 0 || num2 >= 0) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 1;
+// if (num == 0 || num == 1) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 2;
+// if (num == 0 || num == 1) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 2;
+// if (num == 0 || num == 1 || num == 2) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 3;
+// if ( (num > 5 && num < 10) || num == 20) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 3;
+// if (num > 5 || (num > 0 && num < 3) ) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let num = 3;
+// if (num == 9 || (num > 10 && num < 20) || (num > 20 && num < 30) ) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// if ( !(num1 >= 0 || num2 <= 10) ) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = true;
+// if(test === true){
+//     alert('верно');
+// } else {
+//     alert('неверно');
+// }
+
+// let test = false;
+// if(test === false){
+//     alert('верно');
+// } else {
+//     alert('неверно');
+// }
+
+// let test = 1;
+// if (test == true) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 0;
+// if (test == true) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 1;
+// if (test == false) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 1;
+// if (test != true) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = '';	
+// if (test == false) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test;	
+// if (test == true) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 3 * 'a';
+// if (test == true) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = true;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = true;
+// if (!test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = true;
+// if (!test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = true;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 3;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 'abc';
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = '';
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 3 * 'abc';
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = null;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = false;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 0;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = '0';
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = -1;
+// if (test) {
+// 	alert('верно');
+// } else {
+// 	alert('неверно');
+// }
+
+// let test = 11;
+// if(test == 10){
+//     alert('Верно');
+// }
+
+// if (test == 0) 
+// 	alert('верно');
+//  else 
+// 	alert('неверно!');
+
+// if (test == 0) 
+// 	alert('верно');
+
+// let day = 23;
+// if(day >1 && day <=10){
+//     alert('1 декада');
+// }
+// if(day >11 && day <=20){
+//     alert('2 декада');
+// }
+// if(day >21 && day <=31){
+//     alert('3 декада');
+// }
+
+// let day = 23;
+// if(day >1 && day <=10){
+//     alert('1 декада');
+// } else if(day >11 && day <=20){
+//     alert('2 декада');
+// } else if(day >21 && day <=31){
+//     alert('3 декада');
+// }
+
+// let day = 43;
+// if(day >1 && day <=10){
+//     alert('1 декада');
+// } else if(day >11 && day <=20){
+//     alert('2 декада');
+// } else if(day >21 && day <=31){
+//     alert('3 декада');
+// } else {
+//     alert('Ошибка! Это не день месяца')
+// }
+
+// let num = 15;
+// if( !(num >= 10 && num <= 99) ){
+//     alert('Число не от 10 до 99');
+// }
+// if(num >= 10 && num <= 99){
+//     num = String(num);
+//     let res = +num[0] + +num[1];
+//     alert(res);
+//     if(res <= 9){
+//         alert('Сумма цифр однозначна');
+//     } else {
+//         alert('Сумма цифр двузначна');
+//     }
+// }
+
+// let age = 17;
+// let adult;
+// if (age >= 18) {
+// 	 adult = true;
+// } else {
+// 	 adult = false;
+// }
+// console.log(adult);
+
+// let age = 17;
+// let adult;
+// if (age >= 18) {
+// 	 adult = true;
+// } else {
+// 	 adult = false;
+// }
+// console.log(adult);
+
+// let age = 17;
+// let adult;
+// if (age >= 18) {
+// 	adult = true;
+// } else {
+// 	adult = false;
+// }
+// console.log(adult);
+
+// let age = 17;
+// let result;
+// if (age >= 18) {
+// 	if (age <= 23) {
+// 		 result = 'от 18 до 23';
+// 	} else {
+// 		 result = 'больше 23';
+// 	}
+// } else {
+// 	 result = 'меньше 18';
+// }
 // console.log(result);
 
-// let arr = [1,2,3];
-// console.log(arr.length);
+// let age = 19;
+// let result;
+// if (age >= 18) {
+	
+// 	if (age <= 23) {
+// 		result = 'от 18 до 23';
+// 	} else {
+// 		result = 'больше 23';
+// 	}
+// } else {
+// 	result = 'меньше 18';
+// }
+// console.log(result);
 
-// let arr = [1,2,3,4,5,6];
-// console.log(arr.length);
+// let num = 1;
+// if (num == 1) {
+// 	var result = 'верно';
+// } else {
+// 	var result = 'неверно';
+// }
+// console.log(result);
 
-// let arr = [1,2,3];
-// console.log(arr[arr.length - 1]);
+// let num = 1;
+// if (num == 1) {
+// 	let result = 'верно';
+// } else {
+// 	let result = 'неверно';
+// }
+// console.log(result);
 
-// let arr = [1,2,3,3,2,1,2];
-// console.log(arr[arr.length - 1]);
-
-// let arr = ['a','b','c'];
-// arr[0] = '!';
-// console.log(arr);
-
-// let arr = ['a','b','c'];
-// arr[0] = 1;
-// arr[1] = -2;
-// arr[2] = -3;
-// console.log(arr);
-
-// let arr = ['a','b','c'];
-// arr[0] = arr[0] + '!';
-// arr[1] = arr[1] + '!';
-// arr[2] = arr[2] + '!';
-// console.log(arr);
-
-// let arr = ['a','b','c'];
-// arr[0] += '!';
-// arr[1] += '!';
-// arr[2] += '!';
-// console.log(arr);
-
-// let arr = [1,2,3,4,5,6];
-// arr[0] += 3;
-// arr[1] += 3;
-// arr[2] += 3;
-// arr[3] += 3;
-// arr[4] += 3;
-// arr[5] += 3;
-// console.log(arr);
+// let min = 10;
+// if(min >= 0 && min <=20){
+//     alert('1 треть');
+// }
+// if(min >= 20 && min <=40){
+//     alert('2 треть');
+// }
+// if(min >= 40 && min <=60){
+//     alert('3 треть');
+// }
 
 // let arr = [1,2,3,4];
-// arr[0]++;
-// ++arr[1];
-// arr[2]--;
-// --arr[3];
-// console.log(arr);
+// if(arr.length == 3){
+//     alert('да');
+// } else {
+//     alert('нет');
+// }
 
-// let arr = [1,2,3];
-// arr[0]++;
-// arr[1]++;
-// arr[2]++;
-// console.log(arr);
+// let num = 20;
+// let num1 = String(num);
+// if(num1[num1.length-1] == 0){
+//     alert('Равна 0');
+// } else {
+//     alert('Не равна 0');
+// }
 
-// let arr = [];
-// arr[0] = 'a';
-// arr[1] = 'b';
-// arr[2] = 'c';
-// console.log(arr);
+// let num = 24;
+// let num1 = String(num);
+// let even = num1[num1.length-1];
+// console.log(even);
+// if(even == 0 || even == 2 || even == 4 || even == 6 || even == 8){
+//     alert('Число четное');
+// } else{
+//     alert('Число нечетное');
+// }
 
-// let arr = ['a','b','c'];
-// arr[3] = 'd';
-// console.log(arr);
+// let num = 21;
+// let even = num % 2;
+// if(even == 0) {
+//     alert('Четное число');
+// } else {
+//     alert('Нечетное число');
+// }
 
-// let arr = [];
-// arr[0] = 1;
-// arr[1] = 2;
-// arr[2] = 3;
-// console.log(arr);
+// let num = 19;
+// let num2 = num % 3;
+// if(num2 == 0) {
+//     alert('Делится на 3');
+// } else {
+//     alert('Не делится на 3');
+// }
 
-// let arr = [1,2,3];
-// arr[3] = 4;
-// arr[4] = 5;
-// console.log(arr);
+// let month  = 4;
+// if( month >=1 && month <= 3){
+//     alert('Зима');
+// }
+// if( month >=4 && month <= 6){
+//     alert('Лето');
+// }
+// if( month >=7 && month <= 9){
+//     alert('Весна');
+// }
+// if( month >=10 && month <= 12){
+//     alert('Осень');
+// }
 
-// let arr = ['a','b','c'];
-// console.log(arr[10]);
+// let str = 'abcde';
+// if(str[0] == 'a'){
+//     alert('Да');
+// } else{
+//     alert('Нет');
+// }
 
-// let arr = [1,2,3];
-// arr[3] = '!';
-// console.log(arr);
+// let num = 12345;
+// let num1 = String(num);
+// if(num1[0] == 1 || num1[0] == 2 || num1[0] == 3){
+//     alert('Да');
+// } else {
+//     alert('Нет');
+// }
 
-// let arr = [1,2,3];
-// arr[4] = '!';
-// console.log(arr);
+// let num = 367;
+// let num1 = String(num);
+// let res = +num1[0] + +num1[1] + +num1[2];
+// alert(res);
 
+// let num = 246462;
+// let num1 = String(num);
+// if(+num1[0] + +num1[1] + +num1[2] ==  +num1[3] + +num1[4] + +num1[5]){
+//     alert('Да');
+// } else {
+//     alert('Нет');
+// }
 
-// let arr = [1,2,3];
-// arr[5] = '!';
-// console.log(arr);
+// let num = 1;
+// switch (num){
+//     case 1:
+//         alert('Зима');
+//     break;
+//     case 2:
+//         alert('Весна');
+//     break;
+//     case 3:
+//         alert('Лето');
+//     break;
+//     case 4:
+//         alert('Осень');
+//     break;
+//     default:
+//         alert('Ошибка');
+//     break;
+// }
 
-// let arr = [];
-// arr[3] = 'a';
-// arr[8] = 'b';
-// console.log(arr.length);
+// let num = 15;
+// let result = num >= 0 ? 1 : -1;
+// alert(result);
 
-// let obj = {1: 'a', 2: 'b', 3: 'c'};
-// console.log(obj);
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+// alert(a == b);
 
-// let obj = {a:1, b:2, c:3};
-// console.log(obj['a']+obj['b']+obj['c']);
+// let a = 5 * (7 - 4);
+// let b = 1 + 2 + 7;
+// alert(a > b);
 
-// let obj = {'1a':1,'2b':2,'c-c':3};
-// console.log(obj['1a']+obj['2b']+obj['c-c']);
+// let a = 2 ** 4;
+// let b = 4 ** 2;
+// alert(a != b);
 
-// let obj = {'1a':1, b2:2,'c-c':3,d4:4};
+// https://learn.javascript.ru/logical-operators
+// Цепочка ИЛИ || возвращает первое истинное значение или последнее, если такое значение не найдено.
+// И возвращает первое ложное значение. Или последнее, если ничего не найдено.
 
-// let obj = {key1:1, key2:2, key3:3};
-// console.log(obj.key1+obj.key2+obj.key3);
+// let age = confirm('Есть 18 лет?');
+// if(age){
+//     alert('Доступ разрешен');
+// } else {
+//     alert('Доступ запрещен');
+// }
 
-// let user = {name:'Alex',surname:'Ruzh',patronymic:'Alexs'};
-// console.log(user.name +' '+user.surname +' '+user.patronymic);
+// let num1 = 1;
+// let num2 = 2;
+// if (num1 + num2 === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let date = {year:'2022',month:'03',day:'24'};
-// console.log(date.year+'-'+date.month+'-'+date.day);
+// let num1 = 1;
+// let num2 = 2;
+// if (num1 + num2 === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let obj = {};
-// obj.a = 1;
-// obj.b = 2;
-// obj.c = 3;
-// console.log(obj);
+// let num1 = 1;
+// let num2 = 2;
+// if (num1 + num2 === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr = ['a', 'b','c'];
-// let key = 2;
-// console.log(arr[key]);
+// let num1 = '1';
+// let num2 = '2';
+// if (Number(num1) + Number(num2) === 3) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr = [1,2,3,4,5];
-// let key1 = 1;
-// let key2 = 2;
-// console.log(arr[key1]+arr[key2]);
+// let num = 123;
+// let num1 = String(num);
+// if (num1[0] == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let obj = {'a':1,'b':2,'c':3};
-// let key = 'b';
-// console.log(obj[key]);
+// let num = 123;
+// if (String(num)[0] == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// console.log( typeof {a: 1, b: 2, c: 3} );
+// let num = 123;
+// if (String(num)[0] == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// console.log( typeof [1, 2, 3] );
+// let num = 123;
+// let first = String(num)[0];
+// if (first == 1) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr = [1, 2, 3];
-// console.log( typeof arr );
+// let num = 12;
+// let num1 = String(num);
+// if (num1.length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr = [1, 2, 3];
-// console.log( typeof arr[0] );
+// let num = 12;
+// let str = String(num);
+// if (str.length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr = ['1', '2', '3'];
-// console.log( typeof arr[0] );
+// let num = 12;
+// if (String(num).length == 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// console.log( Array.isArray([1, 2, 3]) );
+// let num = 12;
+// if (String(num).length == String(2)) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// console.log( Array.isArray({a: 1, b: 2, c: 3}) );
+// let num = 12;
+// if (String(num).length === 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
 
-// let arr1 = [1, 2, 3];
-// let arr2 = arr1;
-// arr1[0] = 'a';
-// console.log(arr2);
-
-// let arr1 = [1, 2, 3];
-// let arr2 = arr1;
-// arr1[0] = 'a';
-// arr2[1] = 'b';
-// console.log(arr1);
-
-// let arr1 = [1, 2, 3];
-// let arr2 = arr1;
-// arr1[0] = 'a';
-// arr2[0] = 'b';
-// console.log(arr2);
-
-// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
-// console.log('e' in obj);
-// console.log('f' in obj);
-
-// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
-// delete obj.e;
-// console.log('e' in obj);
-
-// let arr = ['a','b','c','d','e'];
-// delete arr[1];
-// delete arr[2];
-// console.log(arr);
-// console.log(arr.length);
-
-// const arr = ['a', 'b', 'c'];
-// arr[1] = '!';
-// console.log(arr);
-
-// const arr = ['a', 'b', 'c'];
-// arr = [1, 2, 3];
-// console.log(arr);
-
-// const arr = ['a', 'b', 'c'];
-// arr = ['a', 'b', 'c'];
-// console.log(arr);
-
-// const arr = [1, 2, 3, 4, 5];
-// const res = arr[1] + arr[2];
-// console.log(res);
-
-// let arr = [1, 2, 3, 4, 5];
-// console.log(arr[arr.length-1]);
-
-// let arr = [1, 2, 3, 4, 5];
-// console.log(arr[0] + arr[1] + arr[2] + arr[3] + arr[4]);
-
-// let arr = [1, 2, 3, 4, 5];
-// console.log(arr.length);
-
-// let obj = {a: 1, b: 2, c: 3};
-// console.log(obj['a']);
-
-// let obj = {a: 1, b: 2, c: 3};
-// let key = 'a';
-// console.log(obj[key]);
-
-// let obj = {a: 1, b: 2, c: 3};
-// let sum = obj['a'] + obj['b'] + obj['c'];
-// console.log(sum);
-
-// let obj = {a: 1, b: 2, c: 3,d:4,f:6,h:9};
-// console.log(Object.keys(obj).length);
+// let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
+// let sum1 = +num[0] + +num[1] + +num[2];
+// let sum2 = +num[3] + +num[4] + +num[5];
+// if (sum1 == sum2) {
+// 	console.log('суммы равны');
+// } else {
+// 	console.log('суммы не равны');
+// }
