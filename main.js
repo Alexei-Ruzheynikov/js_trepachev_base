@@ -1,770 +1,1033 @@
 "use strict"
 
-// let test = 11;
-// if(test > 10){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
+// let i = 1;
+// while(i<=100) {
+//     console.log(i);
+//     i++;
 // }
 
-// let test = 9;
-// if(test < 10){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
+// let i = 11;
+// while(i<= 33) {
+//     console.log(i);
+//     i++;
 // }
 
-// let test = 11;
-// if(test => 10){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
+// let i = 0;
+// while(i <= 100){
+//     console.log(i);
+//     i += 2;
 // }
 
-// let test = 8;
-// if (test <= 10){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
+// let i = 1;
+// while(i<= 99) {
+//     console.log(i);
+//     i += 2;
 // }
 
-// let test = 10;
-// if(test == 10){
-//     alert('Верно');
-// } else {
-//     alert('Неверно')
+// let i = 30;
+// while(i >= 0){
+//     console.log(i);
+//     i--;
 // }
 
-// let test = 9;
-// if(test != 10){
-//     alert('Верно');
-// } else{
-//     alert('Неверно');
+// let i = 10;
+// while (i >= 1) {
+// 	console.log(i);
+//     i--;
 // }
 
-// let test1 = 3, test2 = 4;
-// if(test1 > test2){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
+// let i = 10;
+// while (i >= 1) {
+// 	console.log(i);
+// 	i--;
 // }
 
-// let test1 = '3';
-// let test2 = '3';
-// if (test1 == test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// let i = 10;
+// while (i > 0) {
+// 	console.log(i);
+// 	i--;
 // }
 
-// let test1 = '3';
-// let test2 = '3';	
-// if (test1 === test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// let i = 10;
+// while (i > 0) {
+// 	console.log(i);
+// 	i--;
 // }
 
-// let test1 = 3;
-// let test2 = '3';
-// if (test1 == test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// let i = 10;
+// while (i >= 1) {
+// 	console.log(i);
+// 	i--;
 // }
 
-// let test1 = 3;
-// let test2 = '3';
-// if (test1 === test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// for(let i = 1; i <= 100; i++){
+//     console.log(i);
 // }
 
-// let test1 = 3;
-// let test2 = 3;
-// if (test1 === test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// for(let i = 11; i <= 33; i++){
+//     console.log(i);
 // }
 
-// let test1 = '3';
-// let test2 = '3';
-// if (test1 != test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// for(let i = 0; i <=100; i+=2){
+//     console.log(i);
 // }
 
-// let test1 = '3';
-// let test2 = '3';
-// if (test1 !== test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// for(let i = 1; i <= 99; i += 2){
+//     console.log(i);
 // }
 
-// let test1 = 3;
-// let test2 = '3';
-// if (test1 != test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// for(let i = 100; i >=0; i--){
+//     console.log(i);
 // }
 
-// let test1 = 3;
-// let test2 = '3';	
-// if (test1 !== test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// let res = 1;
+// for(let i = 1; i <= 20; i++){
+//     res = res * i;
+// }
+// console.log(res);
+
+// let res = 0;
+// for(let i = 2; i <= 100; i += 2){
+//     res += i;
+// }
+// console.log(res);
+
+// let res = 0;
+// for(let i = 1; i <= 99; i+=2){
+//     res += i;
+// }
+// console.log(res);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
 // }
 
-// let test1 = 3;
-// let test2 = 2;
-// if (test1 !== test2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 0; i < arr.length; i++) {
+// 	console.log(arr[i]);
 // }
 
-// let num = 11;
-// if(num >=10 && num <= 20){
-//     alert('верно');
-// } else {
-//     alert('неверно');
-// }
-
-// let num =12;
-// if(num > 0 && num < 5){
-//     alert('Верно');
-// } else {
-//     alert('Неверно');
-// }
-
-// let num1 = -10;
-// let num2 = -10;
-// if (num1 >= 0 || num2 >= 0) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num1 = 0;
-// let num2 = 0;
-// if (num1 >= 0 || num2 >= 0) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num1 = 0;
-// let num2 = 5;
-// if (num1 >= 0 || num2 >= 0) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num1 = 5;
-// let num2 = 5;
-// if (num1 >= 0 || num2 >= 0) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num1 = -5;
-// let num2 = 15;
-// if (num1 >= 0 || num2 >= 0) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 1;
-// if (num == 0 || num == 1) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 2;
-// if (num == 0 || num == 1) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 2;
-// if (num == 0 || num == 1 || num == 2) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 3;
-// if ( (num > 5 && num < 10) || num == 20) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 3;
-// if (num > 5 || (num > 0 && num < 3) ) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let num = 3;
-// if (num == 9 || (num > 10 && num < 20) || (num > 20 && num < 30) ) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// if ( !(num1 >= 0 || num2 <= 10) ) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = true;
-// if(test === true){
-//     alert('верно');
-// } else {
-//     alert('неверно');
-// }
-
-// let test = false;
-// if(test === false){
-//     alert('верно');
-// } else {
-//     alert('неверно');
-// }
-
-// let test = 1;
-// if (test == true) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 0;
-// if (test == true) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 1;
-// if (test == false) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 1;
-// if (test != true) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = '';	
-// if (test == false) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test;	
-// if (test == true) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 3 * 'a';
-// if (test == true) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = true;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = true;
-// if (!test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = true;
-// if (!test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = true;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 3;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 'abc';
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = '';
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 3 * 'abc';
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = null;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = false;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 0;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = '0';
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = -1;
-// if (test) {
-// 	alert('верно');
-// } else {
-// 	alert('неверно');
-// }
-
-// let test = 11;
-// if(test == 10){
-//     alert('Верно');
-// }
-
-// if (test == 0) 
-// 	alert('верно');
-//  else 
-// 	alert('неверно!');
-
-// if (test == 0) 
-// 	alert('верно');
-
-// let day = 23;
-// if(day >1 && day <=10){
-//     alert('1 декада');
-// }
-// if(day >11 && day <=20){
-//     alert('2 декада');
-// }
-// if(day >21 && day <=31){
-//     alert('3 декада');
-// }
-
-// let day = 23;
-// if(day >1 && day <=10){
-//     alert('1 декада');
-// } else if(day >11 && day <=20){
-//     alert('2 декада');
-// } else if(day >21 && day <=31){
-//     alert('3 декада');
-// }
-
-// let day = 43;
-// if(day >1 && day <=10){
-//     alert('1 декада');
-// } else if(day >11 && day <=20){
-//     alert('2 декада');
-// } else if(day >21 && day <=31){
-//     alert('3 декада');
-// } else {
-//     alert('Ошибка! Это не день месяца')
-// }
-
-// let num = 15;
-// if( !(num >= 10 && num <= 99) ){
-//     alert('Число не от 10 до 99');
-// }
-// if(num >= 10 && num <= 99){
-//     num = String(num);
-//     let res = +num[0] + +num[1];
-//     alert(res);
-//     if(res <= 9){
-//         alert('Сумма цифр однозначна');
-//     } else {
-//         alert('Сумма цифр двузначна');
+// let arr = [1,2,3,4,5];
+// for( let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 != 0) {
+//         console.log(arr[i]);
 //     }
 // }
 
-// let age = 17;
-// let adult;
-// if (age >= 18) {
-// 	 adult = true;
-// } else {
-// 	 adult = false;
+// let arr = [1,2,3,4,5];
+// let res = 1;
+// for(let i = 0; i< arr.length; i++){
+//     res *= arr[i];
 // }
-// console.log(adult);
+// console.log(res);
 
-// let age = 17;
-// let adult;
-// if (age >= 18) {
-// 	 adult = true;
-// } else {
-// 	 adult = false;
+// let arr = [1,2,3,4,5];
+// let res = 0;
+// for(let i = 0; i < arr.length; i++){
+//     res += arr[i] * arr[i];
 // }
-// console.log(adult);
+// console.log(res);
 
-// let age = 17;
-// let adult;
-// if (age >= 18) {
-// 	adult = true;
-// } else {
-// 	adult = false;
+// let arr = [2,5,9,15,1,4];
+// for(let i = 0; i < arr.length;i++){
+//     if(arr[i] > 3 && arr[i] < 10){
+//         console.log(arr[i]);
+//     }
 // }
-// console.log(adult);
 
-// let age = 17;
-// let result;
-// if (age >= 18) {
-// 	if (age <= 23) {
-// 		 result = 'от 18 до 23';
+// let arr = [-4,-3,-2,1,4,6,7];
+// let res = 0;
+// for(let i =0; i < arr.length; i++){
+//     if(arr[i]>0){
+//         res +=arr[i];
+//     }
+// }
+// console.log(res);
+
+// let arr = [1,2,3,4,5];
+// let res = 0;
+// for(let i = 0; i < arr.length; i++){
+//     res += arr[i];
+// }
+// res = res / arr.length;
+// console.log(res);
+
+// let arr = [10,20,30,50,235,3000];
+// for(let i=0; i< arr.length;i++){
+// let num = String(arr[i])[0];
+//     if(num == 1 || num == 2 || num == 5){
+//         console.log(arr[i]);
+//     }
+// }
+
+// let arr = [1,2,3,4,5];
+// let arr2 = [];
+// for(let i = arr.length - 1; i >= 0; i--){
+//     arr2 += arr[i];
+// }
+// console.log(arr2);
+
+// let arr = [0,1,2,5,3,4,5];
+// for(let i = 0; i < arr.length;i++){
+//     if(arr[i] == i){
+//         console.log(arr[i]);
+//     }
+// }
+
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length; i++){
+//     document.write(arr[i]+'<br>');
+// }
+
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length; i++){
+//     document.write('<p>'+arr[i]+'</p>');
+// }
+
+// let arr = ["пн","вт","ср","чт","пт","сб","вс"];
+// for(let i = 0; i < arr.length; i++){ 
+//     if(!(arr[i] == "сб" || arr[i] == "вс") ){
+//         document.write('<p>'+arr[i]+'</p>');
+//     } else {
+//         document.write('<p><i>'+arr[i]+'</i></p>');
+//     }
+// }
+
+// let arr = ["пн","вт","ср","чт","пт","сб","вс"];
+// let day = arr[1];
+// for(let i = 0; i < arr.length; i++){
+//     if(!(arr[i] == day) ){
+//         document.write('<p>'+arr[i]+'</p>');
+//     } else {
+//         document.write('<p><i>'+arr[i]+'</i></p>');
+//     }
+// }
+
+// let arr = [1,2,3,4,5];
+// for(let elem of arr){
+//     console.log(elem);
+// }
+
+// let arr = ['a','b','c','d','e'];
+// for(let elem of arr){
+//     console.log(elem);
+// }
+
+// let arr = [1,2,3,4,5];
+// let res = 0;
+// for(let elem of arr){
+// res += elem;
+// }
+// console.log(res);
+
+//Возникает вопрос, когда же для перебора массива применять цикл for-of, а когда обычный for? Правило тут такое: если вам не нужны номера элементов массива - используйте for-of, а если нужны - используйте обычный for.
+
+// let arr = ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];
+// for(let month of arr){
+//     console.log(month);
+// }
+
+// let arr = ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];
+// for(let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// let arr = ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];
+// let month = 10;
+// for(let i = 0; i < arr.length;i++){
+//     if(!(arr[i] == arr[month])){
+//         document.write(arr[i] + '<br>');
+//     } else {
+//         document.write('<i>'+ arr[i]+ '</i>'+'<br>');
+//     }
+// }
+
+// let arr = ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"];
+// let month = 10;
+// for(let num of arr){
+//     if(!(num == arr[month])){
+//         document.write(num + '<br>');
+//     } else {
+//         document.write('<i>'+ num + '</i>'+'<br>');
+//     }
+// }
+
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let res = 0;
+// for(let num in obj){
+//     res += obj[num];
+// }
+// console.log(res);
+
+// for( let i = 0,j = 0; i <= 9; i++, j+=2){
+//     console.log(i,j);
+// }
+
+// let arr = [4,3,1,0,4,5];
+// for(let num of arr){
+//     if(!(num == 0)){
+//         console.log(num);
+//     } else {
+//         console.log(num);
+//         break;
+//     }
+// }
+
+// let arr = [4, 3, 1, -5, 5, 7];
+// let res = 0;
+// for( let num of arr){
+// if(num >0){
+//     res += num;
+// } else {
+//     break;
+//     }
+// }
+// console.log(res);
+
+// let arr = [1,3,2,4,5];
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] == 3){
+//         console.log(i);
+//         break;
+//     }
+// }
+
+// let sum = 0;
+// for(let i = 1; sum < 200;i++){
+//     sum += i;
+//     if(sum > 100){
+//         console.log(i);
+//         break;
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let elem of arr) {
+// 	let result;
+// 	if (elem % 2 == 0) {
+// 		result = elem * elem;
+// 	} else if (elem % 3 == 0) {
+// 		result = elem * elem * elem;
 // 	} else {
-// 		 result = 'больше 23';
+// 		continue; // перейдем на новую итерацию цикла
 // 	}
+// 	console.log(result); 
+// }
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let flag = false;
+// for(let num of arr){
+//     if(num == 'c'){
+//         flag = true;
+//         break;
+//     }
+// }
+// if(flag == true){
+//     console.log('Есть');
 // } else {
-// 	 result = 'меньше 18';
+//     console.log('Нет');
+// }
+
+// let num = 31
+// let flag = true;
+// for(let i = 2; i < num;i++){
+//     if(num % i == 0) {
+//         flag = false;
+//         break
+//     }
+// }
+// console.log(flag);
+
+// let num = 23;
+// let i = 0;
+// while (num < 1000){
+//     num *= 3;
+//     i++;
+// }
+// console.log(num, i);
+
+// for(var num = 23, i = 0; num < 1000; i++, num*=3)
+// console.log(num, i);
+
+// let str = '';
+// for(let i = 0; i < 5; i++){
+//     str += '0';
+// }
+// console.log(str);
+
+// let str = '';
+// for(let i = 1; i <= 9; i++){
+//     str += i;
+// }
+// console.log(str);
+
+// let str = '';
+// for(let i = 9; i >0; i--){
+//     str += i;
+// }
+// console.log(str);
+
+// let str = '-';
+// for(let i = 1; i < 10; i++){
+//     str += i+'-';
+// }
+// console.log(str);
+
+// for(let i = 10; i <=1000;i++){
+//     let str = String(i);
+//     if(+str[0]+ +str[1] == 5){
+//         console.log(i);
+//     }
+// }
+
+// let res = '';
+// for(let i = 1; i <= 30; i++){
+//     res += i;
+// }
+// console.log(res);
+
+// for (let i = 1; i <=9; i++){
+//     for(let j = 1; j <= 3; j++){
+//         document.write(i);
+//     }
+// }
+
+// for(let i = 1; i <= 9; i++){
+//     for(let j = 1; j<=2; j++){
+//         document.write(i);
+//     }
+//     document.write(' ');
+// }
+
+// let arr = [];
+// arr[0] = 1;
+// arr[1] = 2;
+// arr[2] = 3;
+// arr[3] = 4;
+// arr[4] = 5;
+// arr[5] = 6;
+// arr[6] = 7;
+// arr[7] = 8;
+// arr[8] = 9;
+// arr[9] = 10;
+// console.log(arr);
+
+// let arr = [];
+// arr[0] = 'x';
+// arr[1] = 'x';
+// arr[2] = 'x';
+// arr[3] = 'x';
+// arr[4] = 'x';
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 0; i < 100; i++){
+//     arr[i] = i + 1;
+// }
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 1, j = 0; i <= 99;i+= 2, j++){
+//     arr[j] = i;
+// }
+// console.log(arr);
+
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length;i++){
+//     arr[i] = arr[i] * arr[i];
+// }
+// console.log(arr);
+
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length; i++){
+//     arr[i]--;
+// }
+// console.log(arr);
+
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length; i++){
+//     arr[i]+= 10;
+// }
+// console.log(arr);
+
+// let arr = [];
+// arr.push(1);
+// arr.push(2);
+// arr.push(3);
+// arr.push(4);
+// arr.push(5);
+// arr.push(6);
+// arr.push(7);
+// arr.push(8);
+// arr.push(9);
+// arr.push(10);
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 1; i <=10; i++){
+//     arr.push(i);
+// }
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 0; i <= 10; i++){
+//     arr.push('x');
+// }
+// console.log(arr);
+
+// let arr = [1,2,3,4,5, -4, -2, 7];
+// let res = [];
+// for(let num of arr){
+//     if(num > 0){
+//         res.push(num);
+//     }
+// }
+// console.log(res);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let res = [];
+// for(let i = arr.length - 1; i >= 0; i--){
+//     res.push(arr[i]);
+// }
+// console.log(res);
+
+// let arr = [];
+// arr.push('a');
+// arr.push('b');
+// arr.push('c');
+// console.log(arr);
+
+// let arr = [];
+// for (let i = 1; i <= 5; i++) {
+// 	arr.push(i);
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let result = [];
+// for (let elem of arr) {
+// 	if (elem % 2 != 0) {
+// 		result.push(elem);
+// 	}
 // }
 // console.log(result);
 
-// let age = 19;
-// let result;
-// if (age >= 18) {
-	
-// 	if (age <= 23) {
-// 		result = 'от 18 до 23';
+// let obj = {};
+// obj['пн'] = 1;
+// obj['вт'] = 2;
+// obj['ср'] = 3;
+// obj['чт'] = 4;
+// obj['пт'] = 5;
+// obj['сб'] = 6;
+// obj['вс'] = 7;
+// console.log(obj);
+
+// let arr1 = ['пн', 'вт', 'ср', 'чт', 
+// 	'пт', 'сб', 'вс']; 
+// let arr2 = [1, 2, 3, 4, 5, 6, 7];
+// let obj = {};
+// for(let i = 0; i < arr1.length; i++){
+//     obj[arr1[i]] = arr2[i];
+// }
+// console.log(obj);
+
+// let arr1 = ['пн', 'вт', 'ср', 'чт', 
+// 	'пт', 'сб', 'вс']; 
+// let arr2 = [1, 2, 3, 4, 5, 6, 7];
+// let obj = {};
+// for(let i = 0; i < arr1.length; i++){
+//     obj[arr2[i]] = arr1[i];
+// }
+// console.log(obj);
+
+// let obj = {'a': 12, 'b': 21, 'c': 
+// 	13, 'd': 23, 'e': 17}; 
+// let res = {};
+// for(let num in obj){
+//     if(obj[num] > 10 && obj[num] < 20){
+//         res[num] = obj[num];
+//     }
+// }
+// console.log(res);
+
+// let obj = {1: 'пн', 2: 'вт', 3: 
+// 	'ср', 4: 'чт', 5: 'пт', 6: 'сб', 7: 'вс'}; 
+// let res = {};
+// for(let num in obj){
+//     if(num % 2 != 0){
+//         res[num] = obj[num];
+//     }
+// }
+// console.log(res);
+
+// let obj = {'a': 1, 'b': 2, 'c': 3, 
+// 	'd': 4, 'e': 5}; 
+// for(let num in obj){
+//     obj[num] = obj[num] * obj[num];
+// }
+// console.log(obj);
+
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let res = {};
+// for(let num in obj){
+//     res[obj[num]] = num;
+// }
+// console.log(res);
+
+// let obj = {
+// 	employee1: 100,
+// 	employee2: 200,
+// 	employee3: 300,
+// 	employee4: 400,
+// 	employee5: 500,
+// 	employee6: 600,
+// 	employee7: 700,
+// };
+// for(let num in obj){
+//     obj[num] *= 1.1;
+// }
+// console.log(obj);
+
+// let obj = {
+// 	employee1: 100,
+// 	employee2: 200,
+// 	employee3: 300,
+// 	employee4: 400,
+// 	employee5: 500,
+// 	employee6: 600,
+// 	employee7: 700,
+// };
+// for(let num in obj){
+//     if(obj[num] <= 400){
+//         obj[num] *= 1.1;
+//     } 
+// }
+// console.log(obj);
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+// let res = {};
+// for(let i = 0; i < arr1.length;i++){
+//     res[arr1[i]] = arr2[i];
+// }
+// console.log(res);
+
+// let obj = {1: 6, 2: 7, 3: 8, 4: 9, 5: 10};
+// let res1 = 0;
+// let res2 = 0;
+// let res;
+// for(let num in obj){
+//     res1 += +num;
+//     res2 += +obj[num];
+// }
+// res = res1 / res2;
+// console.log(res);
+
+// let obj = {'a': 1, 'b': 2, 'c': 3, 
+// 	'd': 4, 'e': 5}; 
+// let arr1 = [];
+// let arr2 = [];
+// for(let num in obj){
+//     arr1 += num + ' ';
+//     arr2 += obj[num] + ' ';
+// }
+// console.log(arr1);
+// console.log(arr2);
+
+// let obj = {
+// 	1: 125,
+// 	2: 225,
+// 	3: 128,
+// 	4: 356,
+// 	5: 145,
+// 	6: 281,
+// 	7: 452,
+// };
+// let arr = [];
+// for(let num in obj){
+//     if(String(obj[num])[0] == 1 || String(obj[num])[0] == 2 ){
+//         arr += obj[num] + ' ';
+//     } 
+// }
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let obj = {};
+// for(let i = 1, j=0; i <= arr.length; i++, j++){
+//     obj[i] = arr[j];
+// }
+// console.log(obj);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let obj = {};
+// for(let i = 1, j = 0; j < arr.length; i++,j++){
+//    obj[arr[j]] = i; 
+// }
+// console.log(obj);
+
+// let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let res = 0;
+// for(let num of arr){
+//     if( num == 3){
+//         res++;
+//     }
+// }
+// console.log(res);
+
+// let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let res1 = 0;
+// let res2 = 0;
+// for(let num of arr){
+//     if( num == 3){
+//         res1++;
+//     }
+//     if( num == 2){
+//         res2++;
+//     }
+// }
+// console.log(res1);
+// console.log(res2);
+
+// let str = 'qweqwerwrqtqqq';
+// let arr = [];
+// let obj = {};
+// for(let i = 0; i < str.length;i++){
+//     arr.push(str[i]);
+// }
+// for(let num of arr){
+//     if( obj[num] === undefined){
+//         obj[num] = 1;
+//     } else {
+//         obj[num]++;
+//     }
+// }
+// console.log(obj);
+
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 1; i < arr.length; i++) {
+// 	console.log(arr[i - 1] + arr[i]);
+// }
+
+// let arr = [3,5,7,9];
+// for(let i = 0;i <arr.length; i++){
+//     if(i == arr.length-1){
+//         break;
+//     }
+//     console.log(arr[i + 1]);
+// }
+
+// let arr = [3,5,7,9];
+// for(let i = 0;i <arr.length; i++){
+//     if(i == arr.length-1){
+//         break;
+//     }
+//     console.log(arr[i] + arr[i + 1]);
+// }
+
+// let arr = [1,2,3,4,5,6];
+// for(let i = 2;i <arr.length; i++){
+//     console.log(arr[i - 2], arr[i - 1]);
+// }
+
+// let arr = [1,2,3,4,5,6];
+// for(let i = 2;i <arr.length; i++){
+//     console.log(arr[i - 2] + arr[i - 1] + arr[i]);
+// }
+
+// let arr = [1,2,3,4,5,6];
+// for(let i = 1;i <arr.length; i++){
+//         if(i == arr.length-1){
+//         break;
+//     }
+//     console.log(arr[i - 1] + arr[i + 1] + arr[i]);
+// }
+
+// let one = 0;
+// let two = 1;
+// let res;
+// for(let i = 0; i < 10;i++){
+//     res = one + two;
+//     one = two;
+//     two = res;
+//     console.log(res);
+// }
+// console.log(res);
+
+// let one = 0;
+// let two = 1;
+// let three = 2;
+// let res;
+// for(let i = 0; i< 10; i++){
+//     res = one + two + three;
+//     one = two;
+//     two = three;
+//     three = res;
+// console.log(res);
+// }
+// console.log(res);
+
+// let str = '';
+// for(let i = 0; i < 5; i++ ){
+//     str +='xx';
+//     document.write(str+ '<br>');
+// }
+
+// for(let i = 1; i<10; i+=2){
+//     for(let j = 1; j<=i; j++){
+//         document.write(i);
+//     }
+//     document.write('<br>');
+// }
+
+// for(let i = 10; i >=1; i-= 2){
+//     let str ='';
+//     for(let j = 0; j < i;j++){
+//         str+= 'x';
+//     }
+//     document.write(str + '<br>');
+// }
+
+// for(let i = 9; i >=1; i--){
+//     let num = '';
+//     for(let j = 0; j < i; j++){
+//         num+= i;
+//     }
+//     document.write(num + '<br>');
+// }
+
+// let str = '';
+// let arr = [];
+// for(let i = 0; i <5; i++){
+//     str+='xx';
+//     arr.push(str);
+// }
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 1; i <= 5;i++){
+//     let str = '';
+//     for(let j = 0; j < 5;j++){
+//         str += i;
+//     }
+//     arr.push(str);
+// }
+// console.log(arr);
+
+// let arr = [10, 20, 30, 40, 21, 32, 51];
+// let res = 0;
+// for(let num of arr){
+//     if(String(num)[0] == 1 || String(num)[0] == 2){
+//         res +=num
+//     }
+// }
+// console.log(res);
+
+// let obj = {a: 10, b: 20, c: 30, d: 40, e: 50};
+// let sum = 0;
+// for (let elem in obj) {
+//     let num = String(obj[elem])[0];
+// 	if (num == '1' || num == '2') {
+// 		sum += obj[elem];
+// 	}
+// }
+// console.log(sum);
+
+// for (let i = 0; i <= 10; i++) {
+// 	console.log(i);
+// }
+
+// for (let i = 10; i >= 0; i--) {
+// 	console.log(i);
+// }
+
+// for (let i = 10; i >= 0; i--) {
+// 	console.log(i);
+// }
+
+// let i = 0;
+// while (i <= 10) {
+// 	console.log(i);
+// 	i++;
+// }
+
+// let res = 0;
+// for (let i = 1; i <= 10; i++) {
+// 	res += i;
+// }
+// console.log(res);
+
+// let res = 1;
+// for (let i = 1; i <= 10; i++) {
+// 	res *= i;
+// }
+// console.log(res);
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let elem of arr) {
+// 	sum += +elem;
+// }
+// console.log(sum); // должно вывести 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let elem of arr) {
+// 	sum += +elem;
+// }
+// console.log(sum); // должно вывести 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let elem of arr) {
+// 	sum += +elem;
+// }
+// console.log(sum); // должно вывести 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+// 	sum += +arr[i];
+// }
+// console.log(sum); // почему-то выводит NaN
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+// 	sum += +arr[i];
+// }
+// console.log(sum); // почему-то выводит не 15
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+// 	sum += +arr[i];
+// }
+// console.log(sum); // почему-то выводит не 15
+
+// let arr = [1, 2, 3, 4, 5];
+// let arr2 =[];
+// for (let elem of arr) {
+// 	elem = elem * elem;
+//     arr2.push(elem);
+// }
+// console.log(arr2);
+
+// let arr = [];
+// for (let i = 1; i <= 5; i++) {
+// 	arr.push(i);
+// }
+// console.log(arr);
+
+// let obj = {a: 1, b: 2, c: 3};
+// let sum = 0;
+// for (let elem in obj) {
+// 	sum += obj[elem];
+// }
+// console.log(sum);
+
+// let obj = {a: 1, b: 2, c: 3};
+// let sum = 0;
+// for (let key in obj) {
+// 	sum += +obj[key];
+// }
+// console.log(sum);
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = '';
+// for (let elem of arr) {
+// 	if (elem === 3) {
+// 		res = '+++';
+//         break;
 // 	} else {
-// 		result = 'больше 23';
+// 		res = '---';
 // 	}
-// } else {
-// 	result = 'меньше 18';
 // }
-// console.log(result);
+// console.log(res);
 
-// let num = 1;
-// if (num == 1) {
-// 	var result = 'верно';
-// } else {
-// 	var result = 'неверно';
+// let arr = [1, 2, 3, 4, 5];
+// let res = false;
+// for (let elem of arr) {
+// 	if (elem === 3) {
+// 		 res = true;
+// 		break;
+// 	}
 // }
-// console.log(result);
+// console.log(res);
 
-// let num = 1;
-// if (num == 1) {
-// 	let result = 'верно';
-// } else {
-// 	let result = 'неверно';
-// }
-// console.log(result);
-
-// let min = 10;
-// if(min >= 0 && min <=20){
-//     alert('1 треть');
-// }
-// if(min >= 20 && min <=40){
-//     alert('2 треть');
-// }
-// if(min >= 40 && min <=60){
-//     alert('3 треть');
+// let arr = [1, 2, 3, 4, 5];
+// for (let elem of arr) {
+// 	if (elem % 2 == 0) {
+// 		console.log(elem);
+// 	}
 // }
 
-// let arr = [1,2,3,4];
-// if(arr.length == 3){
-//     alert('да');
-// } else {
-//     alert('нет');
+// for(let i = 1; i <= 100; i++){
+//     console.log(i);
 // }
 
-// let num = 20;
-// let num1 = String(num);
-// if(num1[num1.length-1] == 0){
-//     alert('Равна 0');
-// } else {
-//     alert('Не равна 0');
+// for(let i = 100; i >= 1; i -=2){
+//     console.log(i);
 // }
 
-// let num = 24;
-// let num1 = String(num);
-// let even = num1[num1.length-1];
-// console.log(even);
-// if(even == 0 || even == 2 || even == 4 || even == 6 || even == 8){
-//     alert('Число четное');
-// } else{
-//     alert('Число нечетное');
+// for( let i = 2; i <= 100; i +=2){
+//     console.log(i);
 // }
 
-// let num = 21;
-// let even = num % 2;
-// if(even == 0) {
-//     alert('Четное число');
-// } else {
-//     alert('Нечетное число');
+// let arr = [];
+// let str = 'x';
+// for(let i = 0; i < 10; i++){
+//     arr.push(str);
+// }
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 1; i <= 10; i++){
+//     arr.push(i);
+// }
+// console.log(arr);
+
+// let arr = [1,2,3,33,5,77];
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > 0 && arr[i] < 10){
+//         console.log(arr[i]);
+//     }
 // }
 
-// let num = 19;
-// let num2 = num % 3;
-// if(num2 == 0) {
-//     alert('Делится на 3');
-// } else {
-//     alert('Не делится на 3');
+// let arr = [1,2,3,33,5,77];
+// let flag = false;
+// for(let i = 0; i < arr.length; i++){
+//     if (arr[i] == 5){
+//         flag = true;
+//     }
 // }
+// console.log(flag);
 
-// let month  = 4;
-// if( month >=1 && month <= 3){
-//     alert('Зима');
+// let arr = [1,2,3,33,5,77];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//     sum += arr[i];
 // }
-// if( month >=4 && month <= 6){
-//     alert('Лето');
+// console.log(sum);
+
+// let arr = [1,2,3];
+// let sum = 0;
+// for(let num of arr){
+// sum += num *num;
 // }
-// if( month >=7 && month <= 9){
-//     alert('Весна');
+// console.log(sum);
+
+// let arr = [1,2,3,4,5];
+// let sum = 0;
+// for(var i = 0; i < arr.length; i++){
+//     sum += arr[i];
 // }
-// if( month >=10 && month <= 12){
-//     alert('Осень');
+// sum /= i;
+// console.log(sum);
+
+// let fact = 4;
+// let res = 1;
+// for(let i = 1; i <= fact; i++){
+//     res *= i;
 // }
-
-// let str = 'abcde';
-// if(str[0] == 'a'){
-//     alert('Да');
-// } else{
-//     alert('Нет');
-// }
-
-// let num = 12345;
-// let num1 = String(num);
-// if(num1[0] == 1 || num1[0] == 2 || num1[0] == 3){
-//     alert('Да');
-// } else {
-//     alert('Нет');
-// }
-
-// let num = 367;
-// let num1 = String(num);
-// let res = +num1[0] + +num1[1] + +num1[2];
-// alert(res);
-
-// let num = 246462;
-// let num1 = String(num);
-// if(+num1[0] + +num1[1] + +num1[2] ==  +num1[3] + +num1[4] + +num1[5]){
-//     alert('Да');
-// } else {
-//     alert('Нет');
-// }
-
-// let num = 1;
-// switch (num){
-//     case 1:
-//         alert('Зима');
-//     break;
-//     case 2:
-//         alert('Весна');
-//     break;
-//     case 3:
-//         alert('Лето');
-//     break;
-//     case 4:
-//         alert('Осень');
-//     break;
-//     default:
-//         alert('Ошибка');
-//     break;
-// }
-
-// let num = 15;
-// let result = num >= 0 ? 1 : -1;
-// alert(result);
-
-// let a = 2 * (3 - 1);
-// let b = 6 - 2;
-// alert(a == b);
-
-// let a = 5 * (7 - 4);
-// let b = 1 + 2 + 7;
-// alert(a > b);
-
-// let a = 2 ** 4;
-// let b = 4 ** 2;
-// alert(a != b);
-
-// https://learn.javascript.ru/logical-operators
-// Цепочка ИЛИ || возвращает первое истинное значение или последнее, если такое значение не найдено.
-// И возвращает первое ложное значение. Или последнее, если ничего не найдено.
-
-// let age = confirm('Есть 18 лет?');
-// if(age){
-//     alert('Доступ разрешен');
-// } else {
-//     alert('Доступ запрещен');
-// }
-
-// let num1 = 1;
-// let num2 = 2;
-// if (num1 + num2 === 3) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num1 = 1;
-// let num2 = 2;
-// if (num1 + num2 === 3) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num1 = 1;
-// let num2 = 2;
-// if (num1 + num2 === 3) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num1 = '1';
-// let num2 = '2';
-// if (Number(num1) + Number(num2) === 3) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 123;
-// let num1 = String(num);
-// if (num1[0] == 1) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 123;
-// if (String(num)[0] == 1) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 123;
-// if (String(num)[0] == 1) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 123;
-// let first = String(num)[0];
-// if (first == 1) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 12;
-// let num1 = String(num);
-// if (num1.length === 2) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 12;
-// let str = String(num);
-// if (str.length === 2) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 12;
-// if (String(num).length == 2) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 12;
-// if (String(num).length == String(2)) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = 12;
-// if (String(num).length === 2) {
-// 	console.log('+++');
-// } else {
-// 	console.log('---');
-// }
-
-// let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
-// let sum1 = +num[0] + +num[1] + +num[2];
-// let sum2 = +num[3] + +num[4] + +num[5];
-// if (sum1 == sum2) {
-// 	console.log('суммы равны');
-// } else {
-// 	console.log('суммы не равны');
-// }
+// console.log(res);
