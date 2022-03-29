@@ -1,228 +1,358 @@
 "use strict"
 
-
-
-// function factorial(x) {
-//     console.log(x);
-//     if (x < 0) return;
-//     if (x === 0) {console.log("x="+x+ " => return 1"); return 1}
-
-//     let f = factorial(x - 1);
-//     let t= x * f;
-//     console.log("x="+x+" => return "+ x+" * "+f +" = >" +" return "+t );
-//     console.log("fact("+x+"-1)" + "=> fact("+(x-1)+")");
-//     console.log("")
-
-//     return t;
-    
-//   }
-// //  console.log(factorial(3)); 
-
-//  console.log(factorial(4)); 
-
-
-// console.log(Math.pow(2, 10));
-
-// console.log(Math.sqrt(245));
-
-// let arr = [4, 2, 5, 19, 13, 0, 10];
-// let res = 0;
-// for(let i = 0; i < arr.length; i++){
-//     res+= +arr[i] * +arr[i] * +arr[i];
-
+// function func(){
+//     alert('Alex');
 // }
-// console.log(Math.sqrt(res));
+// func();
 
-// let a = 379;
-// let b = Math.sqrt(a)
-// console.log(b);
-// console.log(Math.round(b));
-// console.log(b.toFixed(1));
-// console.log(b.toFixed(2));
-
-// let a = 587;
-// let b = Math.sqrt(a);
-// console.log(b);
-// let obj = {
-//     floor: 0,
-//     ceil: 0
+// function func(){
+//     for(let i = 1; i <=100;i++){
+//         console.log(i);
+//     }
 // }
-// obj.floor = Math.floor(b);
-// obj.ceil = Math.ceil(b);
-// console.log(obj);
+// func();
 
-// console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
-// console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
-
-// function getRandomInt(min, max) {
-// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// function func(num){
+//     console.log(num*num*num);
 // }
-// console.log(getRandomInt(1, 100));
+// func(3);
 
+// function func(num){
+//     let flag = '---';
+//     if(num > 0){
+//         flag = '+++';
+//     }
+//     console.log(flag);
+// }
+// func(4);
+
+// function func(num1, num2, num3){
+//     console.log(num1+num2+num3);
+// }
+// func(1,4,6);
+
+// function func(num1, num2, num3){
+//     console.log(num1+num2+num3);
+// }
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// func(param1,param2,param3);
+
+// function func(num = 5) {
+// 	alert(num * num);
+// }
+// func(2);
+// func(3);
+// func();
+
+// function func(num1 = 0, num2 = 0) {
+// 	alert(num1 + num2);
+// }
+// func(2, 3);
+// func(3);
+// func();
+
+// function func(num){
+//     return num*num*num;
+// }
+// let res = func(3);
+// console.log(res);
+
+// function func(num){
+//     return Math.sqrt(num);
+// }
+// let res = func(3) + func(4);
+// console.log(res);
+
+// function sqrt(num) {
+// 	return Math.sqrt(num);
+// }
+// function round(num) {
+// 	return num.toFixed(3);
+// }
+// let res = round(sqrt(2));
+// console.log(res);
+
+// function sqrt(num) {
+// 	return Math.sqrt(num);
+// }
+// function sum(num1, num2, num3) {
+// 	return num1 + num2 + num3;
+// }
+// let res = sum(sqrt(2),sqrt(3),sqrt(4));
+// console.log(res);
+
+// function round(num) {
+// 	return num.toFixed(3);
+// }
+// function sqrt(num) {
+// 	return Math.sqrt(num);
+// }
+// function sum(num1, num2, num3) {
+// 	return num1 + num2 + num3;
+// }
+// let res = round(sum(sqrt(2),sqrt(3),sqrt(4)));
+// console.log(res);
+
+// function func(num) {
+// 	return num;
+// 	let result = num * num;
+// 	return result;
+// }
+// alert( func(3) );
+
+// function func(num) {
+// 	if (num <= 0) {
+// 		return Math.abs(num);
+// 	} else {
+// 		return num * num;
+// 	}
+// }
+// alert( func(10) );
+// alert( func(-5) );
+
+// function func(num) {
+// 	if (num <= 0) {
+// 		return Math.abs(num);
+// 	}
+// 	return num * num;
+// }
+// alert( func(10) );
+// alert( func(-5) );
+
+// function func(num) {
+// 	let sum = 0;
+// 	for (let i = 1; i <= num; i++) {
+// 		sum += i;	
+// 	}
+//     return sum;
+// }
+// alert( func(5) );
+
+// function func(num){
+//     let i = 0;
+//     while(num > 10){
+//         num = num / 2;
+//         i++;
+//     }
+//     return i;
+// }
+// let res = func(112);
+// console.log(res);
+
+// function func(num1, num2) {
+// 	if (num1 > 0 && num2 > 0) {
+// 		return num1 * num2;
+// 	} else {
+// 		return num1 - num2;
+// 	}
+// }
+// alert(func(3, 4));
+
+// function func(arr){
+//     let sum = 0;
+// for(let num of arr){
+//     sum += +num * +num;
+// }
+// return sum;
+// }
+// let arr = [1,2,3,4,5];
+// let res = func(arr);
+// console.log(res);
+
+// function getDigitsSum(num){
+//     let num1 = String(num);
+//     return +num1[0] + +num1[1];
+// }
+// console.log(getDigitsSum(15));
+
+// function getDivisors(num){
 // let arr = [];
-// function getRandomInt(min, max) {
-// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+//     for(let i = 1; i <= num;i++ ){
+//         if(num % i == 0){
+//             arr.push(i);
+//         }
+//     }
+//     return arr;
 // }
-// for(let i = 0; i < 10; i++) {
-//     arr.push(getRandomInt(1, 100));
+// console.log(getDivisors(24));
+
+// function reverseStr(str){
+// let res = str.split('').reverse().join('');
+// return res;
 // }
-// console.log(arr);
+// console.log(reverseStr('abcdef'));
 
-// let a = 3;
-// let b = 5;
-// let res = a -b;
-// console.log(Math.abs(res));
+// function delElem(num, arr){
+// for(let sub of arr){
+//     if(sub == num){
+//         arr.splice(num,1);
+//     }
+// }
+// return arr;
+// }
+// let arr = [1,2,3,4,5];
+// console.log(delElem(2, arr));
 
-// let str = 'js';
-// console.log(str.toUpperCase());
+// function func(num){
+// let arr = [];
+//     for(let i = 1; i <= num; i++){
+//         arr.push(i);   
+//     }
+//     return arr;
+// }
+// console.log(func(5));
 
-// let str = 'JS';
-// console.log(str.toLowerCase());
+// function func(num1, num2){
+// let arr = [];
+// for(let i = num1; i <= num2; i++){
+//     arr.push(i);
+// }
+// return arr;
+// }
+// console.log(func(3, 7));
 
-// let str = 'я учу javascript!';
-// console.log(str.substr(2,3));
-// console.log(str.substr(6,10));
-// console.log(str.substring(2,5));
-// console.log(str.substring(6,16));
-// console.log(str.slice(2,5));
-// console.log(str.slice(6,16));
+// function func(arr){
+// for(let num of arr){
+//     if(!(num % 2 == 0)){
+//         return false;
+//     }
+// }
+// return true;
+// }
+// let arr = [2,4,6,8];
+// let arr1 = [2,5,3,6];
+// console.log(func(arr));
 
-// let str = 'abcdehttp://';
-// console.log(str.indexOf('c'));
-// console.log(str.indexOf('a'));
-// console.log(str.indexOf('a',0));
-// console.log(str.lastIndexOf('a'));
-// console.log(str.indexOf('a', str.length-1));
-// console.log(str.indexOf('http://', 0));
-// console.log(str.lastIndexOf('http://', str.length-1));
-
-// let str = 'http://sdag';
-// console.log(str.startsWith('http://'));
-// console.log(str.endsWith('http://'));
-
-// let str = '1-2-3-4-5';
-// let arr = str.split('-');
-// console.log(arr);
-
-// let str = '12345';
+// function func(num){
+// let str = String(num);
 // let arr = str.split('');
 // console.log(arr);
+// for(let num of arr){
+//     if(!(num % 2 != 0)){
+//         return false;
+//     }
+// }
+// return true;
+// }
+// console.log(func(13));
+
+// function func(arr){
+// for(let i = 0; i < arr.length;i++){
+//     if(arr[i] == arr[i + 1]){
+//         return true;
+//     }
+// }
+// return false
+// }
+// let arr = [1,1,2,3,4,5];
+// console.log(func(arr));
+
+// function func(a, b) {
+//     return a == b;
+// }
+// console.log(func(12,12));
+
+// function func(a, b) {
+// 		return a != b;
+// }
+// console.log(func(12,112));
+
+// function func(a, b) {
+// 		return a + b >= 10;
+// }
+// console.log(func(1,2));
+
+// function func(num) {
+// 		return num >= 0;
+// }
+// console.log(func(2));
+
+// function func1() {
+// 	return 3;
+// }
+// function func2() {
+// 	return 5;
+// }
+// console.log( func1() + func2() );
+
+// function sum(arr) {
+// 	let res = 0;
+// 	for (let elem of arr) {
+// 		res += elem;
+		
+// 	}
+//     return res;
+// }
+// alert(sum([1, 2, 3, 4, 5]));
 
 // let arr = [1, 2, 3, 4, 5];
-// let str = arr.join('-');
-// console.log(str);
+// function func(arr) {
+// 	let res = 0;
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+// 	alert(res);
+// }
+// console.log(func(arr));
 
-// let arr = [1, 2, 3];
-// arr.push(4,5,6);
-// arr.unshift(7,8,9);
-// console.log(arr);
+// function func1() {
+// 	return 3;
+// }
+// function func2() {
+// 	return 5;
+// }
+// console.log( func1() + func2() );
 
-// let arr = [1, 2, 3];
-// console.log(arr.shift());
-// console.log(arr.pop());
+// function sumTo(arr) {
+// 	let sum = 0;
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}	
+// 	return sum;
+// }
+// let sumOn = sumTo([1, 2, 3, 4, 5]);
+// alert(sumOn);
 
-// let arr =[1, 2, 3, 4, 5];
-// let sub = arr.slice(0,3);
-// let subTwo = arr.slice(2);
-// console.log(sub);
-// console.log(subTwo);
+// let res = sum([1, 2, 3, 4, 5]);
+// alert(res);
+// function sum(arr) {
+// 	let sum = 0;
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}
+//     return sum;
+// }
 
-// let arr =[1, 2, 3, 4, 5];
-// let sub = arr.splice(1,2);
-// console.log(arr);
-
-// let arr =[1, 2, 3, 4, 5];
-// arr.splice(2,0,'a','b','c')
-// console.log(arr);
-
-// let arr =[1, 2, 3, 4, 5];
-// arr.splice(1,0,'a','b');
-// arr.splice(6,0,'c');
-// arr.splice(8,0,'e');
-// console.log(arr);
-
-// let arr =[1, 2, 3, 4, 5];
-// console.log(arr.indexOf(3));
+// function add(num) {
+// 	if (num <= 9) {
+// 		return '0' + num;
+// 	} else {
+//         return num;
+//     }
+// }
+// console.log(add(23));
 
 // let arr = [1, 2, 3, 4, 5];
-// console.log(arr.includes(4));
-
-// let str = 'london';
-// let result = str.slice(0, 5) + str.slice(5, 6).toUpperCase() ;
-// console.log(result);
-
-// let str = 'london';
-// let result = str.slice(0, 2).toUpperCase() + str.slice(1);
-// console.log(result);
-
-// let str = 'London';
-// let res = str.slice(0,1).toLowerCase() + str.slice(1);
-// console.log(res);
-
-// let str = 'word1 word2 word3';
-// let arr = str.split(' ');
-// for(let i = 0; i < arr.length; i++){
-//     arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+// let sumOn = sumTw(arr);
+// console.log(sumOn);
+// function sumTw(arr) {
+// 	let res = 0;
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+// 	return res;
 // }
-// let res = arr.join(' ');
-// console.log(res);
-
-// let str = 'var_test_text';
-// let arr = str.split('_');
-// for(let i = 0; i < arr.length; i++){
-//     arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
-// }
-// let res = arr.join('_');
-// console.log(res);
-
-// let str = 'Var_Test_Text';
-// let arr = str.split('_');
-// for(let i = 0; i < arr.length; i++){
-//     arr[i] = arr[i].slice(0,1).toLowerCase() + arr[i].slice(1);
-// }
-// let res = arr.join('_');
-// console.log(res);
-
-// let str = 'red grey green';
-// let res = str.split(' ').reverse().join(' ');
-// console.log(res);
 
 // let num = '12345';
-// let arr = num.split('');
-// let sum = 0;
-// for (let digit of arr) {
-// 	sum += +digit;
+// let res = getDigitsSum(num);
+// console.log(res);
+// function getDigitsSum(num) {
+// 	let arr = num.split('');
+// 	let sum = 0;
+// 	for (let elem of arr) {
+// 		sum += +elem;
+// 	}
+// 	return sum;
 // }
-// console.log(sum);
-
-// let num = 12345;
-// let arr = String(num).split('');
-// let sum = 0;
-// for (let digit of arr) {
-// 	sum += +digit;
-// }
-// console.log(sum);
-
-// let num = 12345;
-// let arr = String(num).split('');
-// let sum = 0;
-// for (let digit of arr) {
-// 	sum += Number(digit);
-// }
-// console.log(sum);
-
-// let num = 12345;
-// let arr = String(num).split('');
-// let sum = 0;
-// for (let digit of arr) {
-// 	sum += Number(digit);
-// }
-// console.log(sum);
-
-// let num = 12345;
-// let arr = String(num).split('');
-// let prod = 1;
-// for (let digit of arr) {
-// 	prod *= digit;
-// }
-// console.log(prod);
