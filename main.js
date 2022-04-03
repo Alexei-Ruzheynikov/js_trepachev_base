@@ -1,358 +1,691 @@
 "use strict"
 
-// function func(){
-//     alert('Alex');
+// function isPrime(num) {
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
 // }
-// func();
-
-// function func(){
-//     for(let i = 1; i <=100;i++){
-//         console.log(i);
+// let arr = [];
+// let res = [];
+// for(let i = 1; i<= 100; i++){
+//     arr.push(i);
+//     if(isPrime(i) == true){
+//         res.push(i);
 //     }
 // }
-// func();
+// console.log(arr);
+// console.log(res);
 
-// function func(num){
-//     console.log(num*num*num);
+// function getDigitsSum(num) {
+// 	let sum = 0;
+// 	let digits = String(num).split('');
+// 	for (let digit of digits) {
+// 		sum += Number(digit);
+// 	}
+// 	return sum;
 // }
-// func(3);
-
-// function func(num){
-//     let flag = '---';
-//     if(num > 0){
-//         flag = '+++';
+// let res = [];
+// for(let i = 1; i <= 2030; i++){
+//     if(getDigitsSum(i) == 13){
+//         res.push(i);
 //     }
-//     console.log(flag);
 // }
-// func(4);
-
-// function func(num1, num2, num3){
-//     console.log(num1+num2+num3);
-// }
-// func(1,4,6);
-
-// function func(num1, num2, num3){
-//     console.log(num1+num2+num3);
-// }
-// let param1 = 1;
-// let param2 = 2;
-// let param3 = 3;
-// func(param1,param2,param3);
-
-// function func(num = 5) {
-// 	alert(num * num);
-// }
-// func(2);
-// func(3);
-// func();
-
-// function func(num1 = 0, num2 = 0) {
-// 	alert(num1 + num2);
-// }
-// func(2, 3);
-// func(3);
-// func();
-
-// function func(num){
-//     return num*num*num;
-// }
-// let res = func(3);
 // console.log(res);
 
-// function func(num){
-//     return Math.sqrt(num);
+// let nums = [123, 456, 789];
+// function reverseDigits(num){
+//     return String(num).split('').reverse().join('');
 // }
-// let res = func(3) + func(4);
-// console.log(res);
+// let result = [];
+// for (let num of nums) {
+// 	result.push(reverseDigits(num));
+// }
+// console.log(result);
 
-// function sqrt(num) {
-// 	return Math.sqrt(num);
+// let num1 = 234;
+// let num2 = 532;
+// function digitsSumEquals(num){
+//     let digits = String(num).split('');
+//     let digitsSum = 0;
+//         for (let digit of digits) {
+//             digitsSum += Number(digit);
+//         }
+//         return digitsSum;
 // }
-// function round(num) {
-// 	return num.toFixed(3);
+// if (digitsSumEquals(num1) == digitsSumEquals(num2)) {
+// 	alert('суммы цифр совпадают');
+// } else {
+// 	alert('суммы цифр не совпадают');
 // }
-// let res = round(sqrt(2));
-// console.log(res);
 
-// function sqrt(num) {
-// 	return Math.sqrt(num);
+// let nums = [12, 24, 35, 14, 10];
+// for (let num of nums) {
+// 	console.log(num + ': ' + getDivisors(num).join(', '));
 // }
-// function sum(num1, num2, num3) {
-// 	return num1 + num2 + num3;
-// }
-// let res = sum(sqrt(2),sqrt(3),sqrt(4));
-// console.log(res);
-
-// function round(num) {
-// 	return num.toFixed(3);
-// }
-// function sqrt(num) {
-// 	return Math.sqrt(num);
-// }
-// function sum(num1, num2, num3) {
-// 	return num1 + num2 + num3;
-// }
-// let res = round(sum(sqrt(2),sqrt(3),sqrt(4)));
-// console.log(res);
-
-// function func(num) {
-// 	return num;
-// 	let result = num * num;
+// function getDivisors(num) {
+// 	let result = [];
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+// 			result.push(i);
+// 		}
+// 	}
 // 	return result;
 // }
-// alert( func(3) );
 
-// function func(num) {
-// 	if (num <= 0) {
-// 		return Math.abs(num);
-// 	} else {
-// 		return num * num;
-// 	}
-// }
-// alert( func(10) );
-// alert( func(-5) );
-
-// function func(num) {
-// 	if (num <= 0) {
-// 		return Math.abs(num);
-// 	}
-// 	return num * num;
-// }
-// alert( func(10) );
-// alert( func(-5) );
-
-// function func(num) {
+// function getSum(arr) {
 // 	let sum = 0;
-// 	for (let i = 1; i <= num; i++) {
-// 		sum += i;	
+// 	for (let elem of arr) {
+// 		sum += Number(elem);
 // 	}
+// 	return sum;
+// }
+// function getDigits(num) {
+// 	return String(num).split('');
+// }
+// let num = 123465;
+// console.log(getSum(getDigits(num)));
+
+// console.log( getAvg(getDivisors(16)) );
+// // Нахождение среднего арифметического:
+// function getAvg(arr) {
+// 	let sum = 0;
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}
+// 	return sum / arr.length;
+// }
+// // Нахождение массива делителей числа:
+// function getDivisors(num) {
+// 	let result = [];
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+// 			result.push(i);
+// 		}
+// 	}
+//     console.log(result);
+//     return result;
+// }
+
+// let arr = [10,43,55,73,80,97];
+// let res = [];
+// function inRange(num){
+//     let sum = sumDigits(stringNum(num))
+//     return sum >= 1 && sum <= 9;
+// }
+// function sumDigits(num){
+//     let sum = 0;
+//     for( let subArr of num){
+//         sum += +subArr;
+//     }
 //     return sum;
 // }
-// alert( func(5) );
-
-// function func(num){
-//     let i = 0;
-//     while(num > 10){
-//         num = num / 2;
-//         i++;
-//     }
-//     return i;
+// function stringNum(num){
+//     return String(num).split('');
 // }
-// let res = func(112);
+
+// for(let elem of arr){
+//     if(inRange(elem)){
+//         res.push(elem);
+//     }
+// }
 // console.log(res);
 
-// function func(num1, num2) {
-// 	if (num1 > 0 && num2 > 0) {
-// 		return num1 * num2;
+// function isFreindly(num1, num2) {
+// 	let sum1 = getSum(num1);
+// 	let sum2 = getSum(num2);
+// 	if (sum1 == num2 && sum2 == num1) {
+// 		return true;
 // 	} else {
-// 		return num1 - num2;
+// 		return false;
 // 	}
 // }
-// alert(func(3, 4));
+// function getOwnDivisors(num) {
+//     let arr = [];
+//     for(let i = 1; i <num;i++){
+//         if(num % i == 0) {
+//             arr.push(i);
+//         }
+//     }
+// 	return arr;
+// }
+// function getSum(num) {
+// 	let arr = getOwnDivisors(num);
+//     let sum = 0
+//     for(let num of arr){
+//         sum += num;
+//     }
+//     return sum;
+// }
+// console.log(getOwnDivisors(284));
+// console.log(getOwnDivisors(220));
+// console.log(getSum(284));
+// console.log(getSum(220));
+// console.log(isFreindly(220,284));
 
-// function func(arr){
+
+
+
+
+
+// /ПЛОХАЯ ПОПЫТКА
+// // проверяет равна ли сумма делителей 1 числа - 2 числу и наоборот
+// function getFreindly(num3){
+//     let arr = arrRange(num3);
+//     let res = [];
+//     // console.log(arr);
+//     for(let i = 0; i < arr.length; i++){
+//         let sum1 = getSum(arr[i]);
+//         console.log(sum1);
+//         for(let j = ++i; j < arr.length; j++){
+//             let sum2 = getSum(arr[j]);
+//             console.log(sum2);
+
+//             // Проверка что числа равны
+//             if(sum1 == arr[j] && sum2 == arr[i]){
+//                 res.push([arr[i], arr[j]]);
+
+//             }
+//         }
+        
+//     }
+//     console.log( res);
+
+//     // return res;
+//     // let sum1 = getSum(num1);
+// 	// let sum2 = getSum(num2);
+//     // if (sum1 == num2 && sum2 == num1) {
+// 	// 	return true;
+// 	// } else {
+// 	// 	return false;
+// 	// }
+//     // return res;
+// }
+// //создает массив делителей числа
+// function getOwnDivisors(num) {
+//     let arr = [];
+//     for(let i = 1; i <num;i++){
+//         if(num % i == 0) {
+//             arr.push(i);
+//         }
+//     }
+// 	return arr;
+// }
+// // суммирует делители одного числа
+// function getSum(num) {
+// 	let arr = getOwnDivisors(num);
+//     let sum = 0
+//     for(let num of arr){
+//         sum += num;
+//     }
+//     return sum;
+// }
+// // создает массив от 1 до 3000
+// function arrRange(num){
+//     let res = [];
+//     for (let i = 1; i <= num; i++){
+//     res.push(i);
+//     }
+//     // console.log( res);
+//     return res;
+// }
+// console.log(getFreindly(300));
+
+// // 1)Создал массив чисел от 1 до 3000
+// // 2) Есть функция - которая берет число и создает массив делителей числа
+// // 3) Есть функция - которая суммирует делители одного числа
+// // 4)
+
+
+
+
+
+// // let arr = [];
+// // arr.push([1,2]);
+// // arr.push([3,4]);
+// // console.log(arr);
+
+// /ПЛОХАЯ ПОПЫТКА
+
+
+
+
+
+// РАЗОБРАТЬ ЕЩЕ РАЗ
+
+// function FriendNum(num){
+//     let a = ArrSum(num);
+//     let b = ArrSum(a);
+//     if (b == num && num != a){
+//     return a;
+//     }else{ return false;
+//     }
+// }
+    
+// function ArrSum(num){
+//     let arr = [];
 //     let sum = 0;
-// for(let num of arr){
-//     sum += +num * +num;
-// }
-// return sum;
-// }
-// let arr = [1,2,3,4,5];
-// let res = func(arr);
-// console.log(res);
-
-// function getDigitsSum(num){
-//     let num1 = String(num);
-//     return +num1[0] + +num1[1];
-// }
-// console.log(getDigitsSum(15));
-
-// function getDivisors(num){
+//     for(let i = 1; i < num; i++){
+//     if(num % i == 0){
+//     arr.push(i);
+//     }
+//     }
+//     for(let elem of arr) {
+//     sum += elem;
+//     } return sum;
+//     }
+    
+// function getFriendly(startNum, endNum){
 // let arr = [];
-//     for(let i = 1; i <= num;i++ ){
+// let result = [];
+//     for( let i = startNum; i <= endNum; i++){
+//         if (FriendNum(i)){ arr[i] = [];
+//         arr[i][0] = i;
+//         arr[i][1] = FriendNum(i)
+//         };
+//     }
+//     for(let elem of arr){
+//         if(elem != undefined){
+//         result.push(elem);
+//         }
+//     }
+//     return result;
+// }
+    
+//     console.log(getFriendly(1, 3000));
+
+// РАЗОБРАТЬ ЕЩЕ РАЗ
+
+
+
+
+// function sumDivisors(num){
+//     let arr = [];
+//     let sum = 0;
+//     for(let i =1; i < num; i++){
 //         if(num % i == 0){
 //             arr.push(i);
 //         }
 //     }
-//     return arr;
-// }
-// console.log(getDivisors(24));
-
-// function reverseStr(str){
-// let res = str.split('').reverse().join('');
-// return res;
-// }
-// console.log(reverseStr('abcdef'));
-
-// function delElem(num, arr){
-// for(let sub of arr){
-//     if(sub == num){
-//         arr.splice(num,1);
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
 //     }
+//     return sum;
 // }
-// return arr;
-// }
-// let arr = [1,2,3,4,5];
-// console.log(delElem(2, arr));
-
-// function func(num){
-// let arr = [];
-//     for(let i = 1; i <= num; i++){
-//         arr.push(i);   
+// function getPerfect(num1,num2){
+//     let res = [];
+//     for(let i = num1; i<= num2;i++){
+//         if( sumDivisors(i) == i){
+//             res.push(i);
+//         }
 //     }
-//     return arr;
+//     return res;
 // }
-// console.log(func(5));
+// console.log(getPerfect(1,1000));
 
-// function func(num1, num2){
-// let arr = [];
-// for(let i = num1; i <= num2; i++){
-//     arr.push(i);
-// }
-// return arr;
-// }
-// console.log(func(3, 7));
-
-// function func(arr){
-// for(let num of arr){
-//     if(!(num % 2 == 0)){
-//         return false;
+// function getInt(arr1, arr2){
+//     let res = [];
+//     for(let num of arr1){
+//         if(inArray(num,arr2)){
+//             res.push(num);
+//         }
 //     }
+//     return res;
 // }
-// return true;
+// function inArray(num, arr){
+// return arr.indexOf(num) !== -1;
 // }
-// let arr = [2,4,6,8];
-// let arr1 = [2,5,3,6];
-// console.log(func(arr));
+// console.log(getInt([1,2,3,4,5],[3,4,5,6,7]));
 
-// function func(num){
-// let str = String(num);
-// let arr = str.split('');
-// console.log(arr);
-// for(let num of arr){
-//     if(!(num % 2 != 0)){
-//         return false;
+
+// function getDiff(arr1, arr2){
+//     let diff1 = getFirstDiff(arr1, arr2);
+//     let diff2 = getFirstDiff(arr2, arr1);
+//     return [].concat(diff1,diff2);
+// }
+// function getFirstDiff(arr1, arr2){
+//     let res = [];
+//     for(let elem of arr1){
+//         if(!inArray(elem, arr2)){
+//             res.push(elem);
+//         }
 //     }
+//     return res;
 // }
-// return true;
+// function inArray(num, arr){
+//     return arr.indexOf(num) !== -1;
 // }
-// console.log(func(13));
+// console.log(getDiff([1,2,3,4,5],[3,4,5,6,7]));
 
-// function func(arr){
-// for(let i = 0; i < arr.length;i++){
-//     if(arr[i] == arr[i + 1]){
-//         return true;
+// function getGreatestCommonDivisor(num1, num2){
+// let elem1 = numberDivisors(num1); 
+// let elem2 = numberDivisors(num2); 
+// let res = [];
+//     for(let elem of elem1){
+//         if(inArray(elem, elem2)){
+//             res.push(elem);
+//         }
 //     }
+//     return res;
+//     // return Math.max.apply(null, res);
 // }
-// return false
-// }
-// let arr = [1,1,2,3,4,5];
-// console.log(func(arr));
 
-// function func(a, b) {
-//     return a == b;
+// function inArray(num,arr){
+//     return arr.indexOf(num) != -1;
 // }
-// console.log(func(12,12));
 
-// function func(a, b) {
-// 		return a != b;
+// function numberDivisors(num){
+//     let res = [];
+//     for(let i = 1; i < num; i++){
+//         if(num % i == 0){
+//             res.push(i);
+//         }
+//     }
+//     return res;
 // }
-// console.log(func(12,112));
+// console.log(numberDivisors(44));
+// console.log(numberDivisors(24));
+// console.log(getGreatestCommonDivisor(44,24));
 
-// function func(a, b) {
-// 		return a + b >= 10;
-// }
-// console.log(func(1,2));
 
-// function func(num) {
-// 		return num >= 0;
-// }
-// console.log(func(2));
 
-// function func1() {
-// 	return 3;
-// }
-// function func2() {
-// 	return 5;
-// }
-// console.log( func1() + func2() );
 
-// function sum(arr) {
-// 	let res = 0;
-// 	for (let elem of arr) {
-// 		res += elem;
-		
+// function getGreatestCommonDivisor(num1, num2){
+// let elem1 = numberDivisors(num1); 
+// let elem2 = numberDivisors(num2); 
+// let res = [];
+//     for(let elem of elem1){
+//         if(inArray(elem, elem2)){
+//             res.push(elem);
+//         }
+        
+//     }
+//         return res.length == 1;
+// }
+
+// function inArray(num,arr){
+//     return arr.indexOf(num) != -1;
+// }
+
+// function numberDivisors(num){
+//     let res = [];
+//     for(let i = 1; i < num; i++){
+//         if(num % i == 0){
+//             res.push(i);
+//         }
+//     }
+//     return res;
+// }
+// console.log(numberDivisors(13));
+// console.log(numberDivisors(16));
+// console.log(getGreatestCommonDivisor(13, 16));
+
+
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// function random(arr){
+//     return arr[getRandomInt(0, arr.length-1)];
+// }
+// console.log(random([4,5,6,7]));
+
+
+
+// function sumThreeRandomNumbers(arr){
+//     let sum = 0;
+//     for(let i =0; i <3;i++){
+//         sum+=random(arr);
+//     }
+//     return sum;
+// }
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// function random(arr){
+//     return arr[getRandomInt(0, arr.length-1)];
+// }
+// console.log(sumThreeRandomNumbers([4,5,6,7,8,9]));
+
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// function shuffle(arr){
+//     let res = [];
+//     while(arr.length > 0){
+//         let random = getRandomInt(0, arr.length - 1);
+//         let elem = arr.splice(random, 1)[0];
+//         res.push(elem);
+//     }
+//     return res;
+// }
+// console.log(shuffle([1,2,3,4,5]));
+
+
+// function range(num1, num2){
+//     let res = [];
+//     for(let i = num1; i <= num2; i++){
+//         res.push(i);
+//     }
+//     return res;
+// }
+// console.log(range(4,8));
+
+
+
+// function rangeRand(num1, num2){
+//     let res = [];
+//     for(let i = num1; i <= num2; i++){
+//         if(getRandomInt(0,1) == 1){
+//             res.push(i);
+//         }
+        
+//     }
+//     return res;
+// }
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(rangeRand(1,10));
+
+
+// function randoms(arr,length){
+//     return first(shuffle(arr), length);
+// }
+// function first(arr, length){
+//     return arr.slice(0,length);
+// }
+// function shuffle(arr) {
+// 	let result = [];
+	
+// 	while (arr.length > 0) {
+// 		let random = getRandomInt(0, arr.length - 1);
+// 		let elem = arr.splice(random, 1)[0];
+// 		result.push(elem);
+// 	}
+	
+// 	return result;
+// }
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log( randoms([1, 2, 3, 4, 5], 3) );
+
+// console.log(isPrime(24)); // должен вывести true
+// function isPrime(num) {
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+//             return false;
+// 		}
+// 	}
+//     return true;
+// }
+
+// let res = isFriendly(220, 284);
+// console.log(res); // должен вывести true
+// function isFriendly(num1, num2) {
+// 	let sum1 = getSum(getOwnDivisors(num1));
+// 	let sum2 = getSum(getOwnDivisors(num2));
+// 	if (sum1 == num2 && sum2 == num1) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// function getOwnDivisors(num) {
+// 	let res = [];
+	
+// 	for (let i = 1; i < num; i++) {
+// 		if (num % i === 0) {
+// 			res.push(i);
+// 		}
 // 	}
 //     return res;
 // }
-// alert(sum([1, 2, 3, 4, 5]));
-
-// let arr = [1, 2, 3, 4, 5];
-// function func(arr) {
-// 	let res = 0;
-// 	for (let elem of arr) {
-// 		res += elem;
-// 	}
-// 	alert(res);
-// }
-// console.log(func(arr));
-
-// function func1() {
-// 	return 3;
-// }
-// function func2() {
-// 	return 5;
-// }
-// console.log( func1() + func2() );
-
-// function sumTo(arr) {
+// function getSum(arr) {
 // 	let sum = 0;
 // 	for (let elem of arr) {
 // 		sum += elem;
-// 	}	
+// 	}
 // 	return sum;
 // }
-// let sumOn = sumTo([1, 2, 3, 4, 5]);
-// alert(sumOn);
 
-// let res = sum([1, 2, 3, 4, 5]);
-// alert(res);
-// function sum(arr) {
-// 	let sum = 0;
-// 	for (let elem of arr) {
-// 		sum += elem;
-// 	}
-//     return sum;
-// }
 
-// function add(num) {
-// 	if (num <= 9) {
-// 		return '0' + num;
-// 	} else {
-//         return num;
+
+
+
+
+
+// function normulizeNum(num){
+
+//     let str = String(num);
+//     if(str.length == 5){
+//         str = '0' + str;
 //     }
-// }
-// console.log(add(23));
-
-// let arr = [1, 2, 3, 4, 5];
-// let sumOn = sumTw(arr);
-// console.log(sumOn);
-// function sumTw(arr) {
-// 	let res = 0;
-// 	for (let elem of arr) {
-// 		res += elem;
-// 	}
-// 	return res;
+//     if(str.length == 4){
+//         str = '00' + str;
+//     }
+//     return str;
 // }
 
-// let num = '12345';
-// let res = getDigitsSum(num);
-// console.log(res);
-// function getDigitsSum(num) {
-// 	let arr = num.split('');
-// 	let sum = 0;
-// 	for (let elem of arr) {
-// 		sum += +elem;
-// 	}
-// 	return sum;
+// function isLucky(num){
+// let str = normulizeNum(num);
+
+// let sum1 = Number(str[0]) + Number(str[1]) + Number(str[2]);
+// let sum2 = Number(str[3]) + Number(str[4]) + Number(str[5]);
+
+// return sum1 == sum2;
 // }
+// function getLuckyTickets(){
+//     let res = [];
+//     for(let i = 1001; i <=999999; i++){
+//         if(isLucky(i)){
+//             res.push(i);
+//         }
+//     }
+//     return res;
+// }
+// console.log(getLuckyTickets());
+
+
+
+
+
+
+
+
+// function normulizeNum(num){
+//     let str = String(num);
+//     if(str.length == 5){
+//         str = '0' + str;
+//     }
+//     if(str.length == 4){
+//         str = '00' + str;
+//     }
+//     return str;
+// }
+
+// function isLucky(num){
+//     let str = normulizeNum(num);
+//     let sum1 = Number(str[0]) + Number(str[1]) + Number(str[2]);
+//     let sum2 = Number(str[3]) + Number(str[4]) + Number(str[5]);
+//     return sum1 == sum2;
+// }
+// function getLuckyNum(){
+//     let res = [];
+//     for(let i = 1001; i <=999999; i++){
+//         if(isLucky(i)){
+//             res.push(i);
+//         }
+//     }
+//     return res;
+// }
+// console.log(getLuckyNum());
+
+
+
+// СЛОЖНАЯ ЗАДАЧА 127
+// function formStr(data, length){
+//     let res = '';
+//     for(let i = 0; i< length;i++){
+//         res += data;
+//     }
+//     return res;
+// }
+// function normalizeNum(num, digitsAmount) {
+// 	let str = String(num);
+// 	return formStr('0', digitsAmount - str.length) + str;
+// }
+// function isLucky(num) {
+// 	let str = normalizeNum(num);
+	
+// 	let sum1 = Number(str[0]) + Number(str[1]) + Number(str[2]);
+// 	let sum2 = Number(str[3]) + Number(str[4]) + Number(str[5]);
+	
+// 	return sum1 == sum2;
+// }
+
+// function getLast(data, length){
+//     let res = '';
+//     for(let i = 0; i< length;i++){
+//         res += data;
+//     }
+//     return res;
+// }
+// function getFirst(digitsAmount){
+//     let res = 0;
+//     if(digitsAmount == 4){
+//         res = 101;
+//     }
+//     if(digitsAmount == 6){
+//         res = 1001;
+//     }
+//     if(digitsAmount == 8){
+//         res = 10001;
+//     }
+//     if(digitsAmount == 10){
+//         res = 100001;
+//     }
+//     return res;
+// }
+
+// function getLuckyTickets(digitsAmount) {
+// 	let result = [];
+// 	let last = Number(getLast(9, digitsAmount));
+// 	let first = Number(getFirst(digitsAmount));
+// 	for (let i = first; i <= last; i++) {
+// 		let ticket = normalizeNum(i, digitsAmount);
+	
+//         if (isLucky(ticket)) {
+//             result.push(ticket); 
+//         }
+// 	}
+// 	return result;
+// }
+// console.log(getLuckyTickets(6));
+
+// /СЛОЖНАЯ ЗАДАЧА 127
