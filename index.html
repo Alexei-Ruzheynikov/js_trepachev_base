@@ -4,493 +4,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Формы</title>
+    <title>Объект Event и Контекст</title>
     <style>
-        
+        /* ul {
+            padding: 30px;
+            border: 1px solid red;
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 20px;
+            border: 1px dashed black;
+        } */
+
+            /* div, ul, li {
+                padding: 20px;
+            }
+
+            div {
+                border: 1px solid red;
+            }
+            ul {
+                border: 1px solid orange;
+            }
+            li {
+                border: 1px solid green;
+            } */
+
+            /* #block:not(.active) {
+                display: none;
+            } */
+
+            /* .active {
+                display: block;
+            } */
+
+
     </style>
 </head>
 <body>
 
+<!-- <button id="elem">text</button> -->
+
+<!-- <div id="elem">0 : 0</div> -->
+
+<!-- <button id="elem">text</button> -->
 
 
-<!-- <textarea id="elem">wqerty</textarea>
-<p id="paragraph"></p> -->
-<!-- 
-<input type="text" id="elem">
-<input type="submit" id="btn"> -->
+<!-- <ul id="elem">
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+</ul> -->
 
-<!-- <input type="text" id="elem">
-<input type="submit" id="btn1">
-<input type="submit" id="btn2"> -->
+<!-- <p id="paragraph"></p>
+<input type="text" id="elem"> -->
 
-<!-- 
-<input type="text" id="elem">
-<input type="submit" id="btn"> -->
+<!-- <button id="btn">Кнопка</button> -->
 
+<!-- <ul id="elem">
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+	<li>text</li>
+</ul> -->
 
-<!-- <input type="checkbox" id="elem">
-<input type="submit" id="btn1">
-<input type="submit" id="btn2"> -->
+<!-- <a href="#href" id="elem">text</a> -->
 
-
-<!-- <input type="checkbox" id="elem">
-<input type="submit" id="btn">
-<p id="paragraph"></p> -->
-
-
-<!-- <input type="checkbox" id="elem">
-<input type="submit" id="btn"> -->
-
-<!-- <input type="radio" name="elem" value="1" checked>
-<input type="radio" name="elem" value="2" >
-<input type="radio" name="elem" value="3" >
+<!-- <input type="text" id="elem1" value="1">
+<input type="text" id="elem2" value="2">
 <p id="paragraph"></p>
-<input type="submit" id="btn"> -->
+<a href="#" id="link">Ссылка</a> -->
 
-<!-- <input type="text" id="elem">
-<p id="paragraph"></p> -->
-
-
-<!-- <input type="checkbox" id="elem" checked> -->
-
-
-<!-- <input type="text" id="elem"> -->
-
-
-<!-- <input type="text" id="elem"> -->
-
-
-<!-- <input type="text" id="elem">
-<p id="paragraph"></p>
+<!-- <div>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</div>
  -->
 
-
-<!-- <input type="text" id="elem1">
-<input type="text" id="elem2"> -->
-
-<!-- <select id="select">
-    <option >one</option>
-    <option selected>two</option>
-    <option >three</option>
-</select>
-<p id="paragraph"></p>
-<input type="submit" id="btn"> -->
-
-
-
-<!-- <select id="select">
-    <option>2020</option>
-    <option>2021</option>
-    <option>2022</option>
-    <option>2023</option>
-    <option>2024</option>
-    <option>2025</option>
-    <option>2026</option>
-    <option>2027</option>
-    <option>2028</option>
-    <option>2029</option>
-    <option>2030</option>
-</select> -->
-
-
 <!-- 
-<select id="select">
-    <option value="1">Пн</option>
-    <option value="2">Вт</option>
-    <option value="3">Ср</option>
-    <option value="4">Чт</option>
-    <option value="5">Пт</option>
-    <option value="6">Сб</option>
-    <option value="7">Вс</option>
-</select> -->
-
-<!-- <select id="select">
-    <option value="0">Янв</option>
-    <option value="1">Фев</option>
-    <option value="2">Мар</option>
-    <option value="3">Апр</option>
-    <option value="4">Май</option>
-    <option value="5">Июн</option>
-    <option value="6">Июл</option>
-    <option value="7">Авг</option>
-    <option value="8">Сен</option>
-    <option value="9">Окт</option>
-    <option value="10">Ноя</option>
-    <option value="11">Дек</option>
-</select> -->
+<div id="parent">
+	<button>click me</button>
+	<div id="block">
+		text
+	</div>
+</div> -->
 
 
-<!-- <input type="text" id="elem">
-<select id="select">
-    <option value="1">один</option>
-    <option value="2">два</option>
-    <option value="3">три</option>
-</select> -->
+
+<!-- <input id="elem" value="text"> -->
 
 
-<!-- <select id="select">
-    <option value="0">Вс</option>
-    <option value="1">Пн</option>
-    <option value="2">Вт</option>
-    <option value="3">Ср</option>
-    <option value="4">Чт</option>
-    <option value="5">Пт</option>
-    <option value="6">Сб</option>
-</select>
- -->
-<!-- 
-
-<select id="select">
-    <option value="1">lol</option>
-    <option value="2">lol</option>
-    <option value="3">lol</option>
-</select> -->
-
-<!-- 
-<select id="select">
-    <option value="1" id="value">lol</option>
-    <option value="2" id="value">lol</option>
-    <option value="3" id="value" selected>lol</option>
-    <option value="4" id="value">lol</option>
-</select> -->
+<!-- <input id="elem" value="3"> -->
 
 
-<!-- <select id="select">
-    <option value="1">one</option>
-    <option value="2">two</option>
-    <option value="3">three</option>
-    <option value="4">four</option>
-</select>
-<input type="submit" id="btn"> -->
 
-<!-- <select id="select">
-    <option value="1">один</option>
-    <option value="2" selected>два</option>
-    <option value="3">три</option>
-    <option value="4">четыре</option>
-</select>
-<input type="submit" id="btn"> -->
+<!-- <input id="elem" value="3"> -->
 
 
-<!-- <select id="select">
-    <option value="1">один</option>
-    <option value="2">два</option>
-    <option value="3">три</option>
-    <option value="4">четыре</option>
-</select>
-<input type="submit" id="btn"> -->
+<!-- <input id="elem" value="3"> -->
+
+<!-- <input id="elem1" value="text1">
+<input id="elem2" value="text2">
+<input id="elem3" value="text3"> -->
 
 
-<!-- <textarea></textarea>
-<div></div> -->
-
-<!-- <input type="checkbox" id="checkbox">
-<div></div>
-<button id="btn">button</button>
- -->
+<!-- <input id="elem" value="привет"> -->
 
 
- <input type="checkbox">
-<button>button</button>
+<!-- <input id="elem" value="привет"> -->
+
+
+<input id="elem" value="привет">
 
 
 <script>
 
-let checkbox = document.querySelector('input[type="checkbox"]');
-let button = document.querySelector('button');
 
-button.addEventListener('click', function() {
-	if (checkbox.checked == true) {
-		console.log('+++');
-	} else {
-		console.log('---');
-	}
-});
+"use strict";
 
 
+let elem = document.getElementById('elem');
 
-// let checkbox = document.querySelector('#checkbox');
-// let btn = document.querySelector('#btn');
-// let div = document.querySelector('div');
+function func(surname, name) {
+	console.log(this.value + ', ' + surname + ' ' + name);
+}
 
-// btn.addEventListener('click', function() {
-// 	if (checkbox.checked) {
-// 		div.textContent = '111';
-// 	} else {
-// 		div.textContent = '222';
-// 	}
-// });
+// Тут напишите конструкцию с bind()
 
-
-// let textarea = document.querySelector('textarea');
-// let div = document.querySelector('div');
-
-// textarea.addEventListener('blur', function() {
-// 	div.textContent = textarea.value;
-// });
-
-
-
-
-// let select = document.querySelector('#select');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-// select[select.selectedIndex].textContent +='!';
-// console.log(select.selectedIndex);
-// });
-
-// let select = document.querySelector('#select');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     console.log(select[select.selectedIndex].textContent);
-// })
-
-
-
-// let select = document.querySelector('#select');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     let option = select[3];
-//     option.selected = true;
-// });
-
-
-
-// let select = document.querySelector('#select');
-// for(option of select){
-//     if(option.selected == true){
-//         option.textContent += '!';
-//     } else {
-//         option.textContent += '?';
-//     }
-// }
-
-
-
-// let select = document.querySelector('#select');
-// for(let option of select){
-//     option.textContent = option.textContent + option.value;
-// }
-
-
-
-
-
-// let select = document.querySelector('#select');
-// let myDate = new Date();
-// select.value = myDate.getDay();
-
-
+let newFunc = func.bind(elem,); // тут должно вывести 'привет, Иванов Иван'
+newFunc('Иванов', 'Иван');
+let newFunc2 = func.bind(elem,); // тут должно вывести 'привет, Петров Петр'
+newFunc2('Петров', 'Петр');
 
 
 
 // let elem = document.querySelector('#elem');
-// let select = document.querySelector('#select');
-// elem.addEventListener('blur', function(){
-//     select.selectedIndex = elem.value;
-// })
+
+// function func(surname, name) {
+// 	console.log(this.value + ', ' + surname + ' ' + name);
+// }
+
+// func.apply(elem, ['Иванов', 'Иван']); // тут должно вывести 'привет, Иванов Иван'
+
+// let elem = document.querySelector('#elem');
+
+// function func(surname, name) {
+// 	console.log(this.value + ', ' + surname + ' ' + name);
+// }
+
+// func.call(elem, 'Иванов', 'Иван');
 
 
-
-// let select = document.querySelector('#select');
-// let date = new Date();
-// select.value = date.getMonth();
-// console.log(date.getMonth());
-
-
-// let select = document.querySelector('#select');
-// select.addEventListener('change', function(){
-//         if(select.value == 6 || select.value == 7){
-//             console.log('Выходной день');
-//         } else {
-//             console.log('Рабочий день');
-//         }
-// });
-
-
-// let select = document.querySelector('#select');
-// select.addEventListener('change', function(){
-//     let myDate = new Date(select.value, 2, 0);
-//     if(myDate.getDate() == 29){
-//         console.log('Високосный год');
-//     }
-// console.log(myDate);
-// });
-
-
-
-// let select = document.querySelector('#select');
-// let paragraph = document.querySelector('#paragraph');
-// let btn = document.querySelector('#btn');
-
-// btn.addEventListener('click', function(){
-//     paragraph.textContent = select.value
-// });
 
 // let elem1 = document.querySelector('#elem1');
 // let elem2 = document.querySelector('#elem2');
-// elem1.addEventListener('input', function(){
-//     if(elem1.value.length == 2){
-//         elem1.blur();
-//         elem2.focus();
+// let elem3 = document.querySelector('#elem3');
+
+// function func() {
+// 	console.log(this.value);
+// }
+// func.call(elem1);
+// func.call(elem2);
+// func.call(elem3);
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', func);
+
+// function func() {
+	
+
+//     let square = () => {
+//         return this.value * this.value;
 //     }
-// });
-// elem2.addEventListener('input', function(){
-//     if(elem2.value.length == 2){
-//         elem2.blur();
-//     }
-// });
+//     alert( square() );
+// }
 
 
 
 
 // let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', func);
+
+// function func() {
+// 	alert( square(this) );
+	
+// 	function square(param) {
+// 		return param.value * param.value;
+// 	}
+// }
+
+
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', func);
+
+// function func() {
+//     let self = this;
+// 	alert( square() );
+	
+// 	function square() {
+// 		return self.value * self.value;
+// 	}
+// }
+
+
+
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', parent);
+
+// function parent() {
+// 	console.log(this.value); // что выведет?
+	
+// 	function child() {
+// 		console.log(this.value); // что выведет?
+// 	}
+// 	child();
+// }
+
+
+// let parent = document.querySelector('#parent');
+// let button = document.querySelector('button');
+// let block  = document.querySelector('#block');
+
+// button.addEventListener('click', function(event) {
+// 	block.classList.add('active');
+//     event.stopPropagation();
+// });
+
+// parent.addEventListener('click', function() {
+// 	block.classList.remove('active');
+// });
+
+
+
+
+
+
+// let div = document.querySelector('div');
+// div.addEventListener('click', function(event){
+//     if(event.target.tagName == 'DIV'){
+//         console.log('Клик по div');
+//     }
+//     if(event.target.tagName == 'UL'){
+//         console.log('Клик по ul');
+//         event.target.innerHTML += '<li> '+ 4 + ' </li>';
+//     }
+//     if(event.target.tagName == 'LI'){
+//         console.log('Клик по li');
+//         event.target.textContent += '!';
+//     }
+// });
+
+
+
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
 // let paragraph = document.querySelector('#paragraph');
-// elem.addEventListener('input', function(){
-//     if(elem.value > 5){
-//         paragraph.textContent = elem.value - 5;
-//         paragraph.textContent = 'на ' + paragraph.textContent + ' символов'; 
-//     } else {
-//         paragraph.textContent = 5 - elem.value;
-//     }
-    
-// })
-
-
-
-
-
-
-
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('input', function(){
-//     if(elem.value.length == 5){
-//         console.log('Равно 5');
-//     }
-// })
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('change', function(){
-//     if(elem.value.length < 5){
-//         elem.style.border = '2px solid green';
-//     } else {
-//         elem.style.border = '2px solid red';
-//     }
-// })
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('change', function(){
-//     if(elem.checked){
-//         console.log('тру');
-//     } else {
-//         console.log('фолс');
-//     }
+// let link = document.querySelector('#link');
+// link.addEventListener('click', function(event){
+//     event.preventDefault();
+//     paragraph.textContent = +elem1.value + + elem2.value;
 // });
 
 // let elem = document.querySelector('#elem');
-// let paragraph = document.querySelector('#paragraph');
-// elem.addEventListener('change', function(){
-//     paragraph.textContent = elem.value;
-//     console.log(this.value);
+// elem.addEventListener('click', function(event){
+//     event.preventDefault();
+//     elem.textContent += elem.href;
+// });
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('click', function(event){
+//     if(event.ctrlKey){
+//         event.target.textContent += 1;
+//     }
+//     if(event.shiftKey){
+//         event.target.textContent += 2;
+//     }
 // });
 
 
 
-// let radios = document.querySelectorAll('input[type="radio"]');
-// let paragraph = document.querySelector('#paragraph');
 // let btn = document.querySelector('#btn');
-
-// btn.addEventListener('click', function(){
-//     for(let radio of radios){
-//         if(radio.checked){
-//             paragraph.textContent = radio.value;
-//         }
+// btn.addEventListener('click', function(event){
+//     if(event.altKey){
+//         this.style.color = 'red';
 //     }
 // });
 
-
-
-
-// let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     elem.checked = !elem.checked;
-// });
-
-
-
-// let elem = document.querySelector("#elem");
-// let btn = document.querySelector("#btn");
 // let paragraph = document.querySelector('#paragraph');
+// let elem = document.querySelector('#elem');
 
-// btn.addEventListener('click', function(){
-//     if(elem.checked == true){
-//         paragraph.textContent = 'Привет';
-//     } else {
-//         paragraph.textContent = 'Пока';
+// elem.addEventListener('keydown', function(event){
+//     if(event.key == 'Enter'){
+//         paragraph.textContent = elem.value;
+//         elem.value = '';
 //     }
-// })
-
-
-// let elem = document.querySelector('#elem');
-// let btn1 = document.querySelector('#btn1');
-// let btn2 = document.querySelector('#btn2');
-// btn1.addEventListener('click', function(){
-//     elem.checked = true;
-// });
-
-// btn2.addEventListener('click', function(){
-//     elem.checked = false;
 // });
 
 
+
+
 // let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     if(elem.disabled == true){
-//         console.log('Кнопка заблокирована');
-//     } else {
-//         console.log('Кнопка доступна');
+// elem.addEventListener('click', function(event){
+//     if(event.target.tagName == 'LI'){
+//         event.target.textContent += '!';
 //     }
-// })
-
-
-// let elem = document.querySelector('#elem');
-// let btn1 = document.querySelector('#btn1');
-// let btn2 = document.querySelector('#btn2');
-
-// btn1.addEventListener('click', function(){
-//     elem.disabled = true;
-// });
-// btn2.addEventListener('click', function(){
-//     elem.disabled = false;
+//     if(event.target.tagName == 'UL'){
+//         elem.innerHTML += '<li>'+'text'+'</li>';
+//     }
 // });
 
 // let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click',function(){
-//     elem.disabled = true;
-// })
+
+// elem.addEventListener('click', func);
+// elem.addEventListener('dblclick', func);
+
+// function func(event) {
+// 	if(event.type == 'click'){
+//         elem.style.color = 'green';
+//     }
+//     if(event.type == 'dblclick'){
+//         elem.style.color = 'red';
+//     }
+// }
 
 
 // let elem = document.querySelector('#elem');
-// let paragraph = document.querySelector('#paragraph');
-// elem.addEventListener('blur', function(){
-//     paragraph.innerHTML = elem.value;
+// elem.addEventListener('mousemove', function(event){
+//     elem.textContent = event.clientX + ' : ' + event.clientY;
 // });
 
 
 
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('click', function(event){
+//     console.log(event);
+// });
 
 
 
