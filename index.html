@@ -4,350 +4,455 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Объект Event и Контекст</title>
+    <title>Таймер</title>
     <style>
-        /* ul {
-            padding: 30px;
-            border: 1px solid red;
+        .red{
+            color: red;
         }
-        li {
-            list-style-type: none;
-            margin-bottom: 20px;
-            border: 1px dashed black;
-        } */
-
-            /* div, ul, li {
-                padding: 20px;
-            }
-
-            div {
-                border: 1px solid red;
-            }
-            ul {
-                border: 1px solid orange;
-            }
-            li {
-                border: 1px solid green;
-            } */
-
-            /* #block:not(.active) {
-                display: none;
-            } */
-
-            /* .active {
-                display: block;
-            } */
-
-
+        .green{
+            color: green;
+        }
     </style>
 </head>
 <body>
 
-<!-- <button id="elem">text</button> -->
 
-<!-- <div id="elem">0 : 0</div> -->
-
-<!-- <button id="elem">text</button> -->
+<!-- <button id="btn">Жми!</button> -->
 
 
-<!-- <ul id="elem">
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-</ul> -->
+<!-- <button id="btn">Жми!</button> -->
 
-<!-- <p id="paragraph"></p>
-<input type="text" id="elem"> -->
+<!-- <button id="start">start</button>
+<button id="end">end</button> -->
 
-<!-- <button id="btn">Кнопка</button> -->
 
-<!-- <ul id="elem">
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-</ul> -->
+<!-- <input type="submit" id="start" value="start">
+<input type="submit" id="stop"  value="stop"> -->
 
-<!-- <a href="#href" id="elem">text</a> -->
+<!-- <input type="submit" id="start" value="start">
+<input type="submit" id="stop"  value="stop"> -->
 
-<!-- <input type="text" id="elem1" value="1">
-<input type="text" id="elem2" value="2">
-<p id="paragraph"></p>
-<a href="#" id="link">Ссылка</a> -->
 
-<!-- <div>
-	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-	</ul>
-</div>
- -->
-
-<!-- 
-<div id="parent">
-	<button>click me</button>
-	<div id="block">
-		text
-	</div>
-</div> -->
+<!-- <input type="submit" id="start" value="start">
+<input type="submit" id="stop"  value="stop"> -->
 
 
 
-<!-- <input id="elem" value="text"> -->
+<!-- <input type="submit" id="start" value="start">
+<input type="submit" id="stop"  value="stop"> -->
+
+<!-- <button id="start">start</button>
+<button id="stop">stop</button> -->
 
 
-<!-- <input id="elem" value="3"> -->
+<!-- <input id="elem" value="1"> -->
+
+<!-- <input type="text" id="elem" value="10"> -->
+
+
+<!-- <input type="text" id="elem" value="10"> -->
+
+<!-- <input type="button" id="elem" value="1"> -->
+
+<!-- <input type="button" id="elem" value="1"> -->
+
+
+<!-- <input type="button" id="elem" value="10"> -->
+
+<!-- <input type="submit" id="btn">
+<p id="paragraph">1</p> -->
+
+<!-- <input type="submit" id="btn">
+<p id="paragraph">10</p> -->
+
+
+<!-- <input type="text" id="elem" value="2"> -->
+
+
+<!-- <input type="text" id="elem" value="5">
+<p id="paragraph"></p> -->
+
+
+<!-- <input type="text" id="elem" value="10">
+<input type="submit" id="btn">
+<p id="paragraph"></p> -->
+
+<!-- <input type="text" id="elem" value="1">
+<input type="submit" id="start" value="start">
+<input type="submit" id="end" value="end"> -->
 
 
 
-<!-- <input id="elem" value="3"> -->
+<!-- <p id="paragraph" class="red">Абзац</p> -->
 
 
-<!-- <input id="elem" value="3"> -->
+<!-- <p id="paragraph"></p> -->
 
-<!-- <input id="elem1" value="text1">
-<input id="elem2" value="text2">
-<input id="elem3" value="text3"> -->
-
-
-<!-- <input id="elem" value="привет"> -->
-
-
-<!-- <input id="elem" value="привет"> -->
-
-
-<input id="elem" value="привет">
+<!-- <p id="paragraph"></p> -->
 
 
 <script>
 
-
-"use strict";
-
-
-let elem = document.getElementById('elem');
-
-function func(surname, name) {
-	console.log(this.value + ', ' + surname + ' ' + name);
-}
-
-// Тут напишите конструкцию с bind()
-
-let newFunc = func.bind(elem,); // тут должно вывести 'привет, Иванов Иван'
-newFunc('Иванов', 'Иван');
-let newFunc2 = func.bind(elem,); // тут должно вывести 'привет, Петров Петр'
-newFunc2('Петров', 'Петр');
-
-
-
-// let elem = document.querySelector('#elem');
-
-// function func(surname, name) {
-// 	console.log(this.value + ', ' + surname + ' ' + name);
+// let i = 1000;
+// let j = 1;
+// function timer(){
+//     setTimeout(function(){
+//     console.log(j);
+//     i +=1000;
+//     j++;
+//     timer();
+//     },i);
+    
 // }
-
-// func.apply(elem, ['Иванов', 'Иван']); // тут должно вывести 'привет, Иванов Иван'
-
-// let elem = document.querySelector('#elem');
-
-// function func(surname, name) {
-// 	console.log(this.value + ', ' + surname + ' ' + name);
-// }
-
-// func.call(elem, 'Иванов', 'Иван');
+// timer();
 
 
-
-// let elem1 = document.querySelector('#elem1');
-// let elem2 = document.querySelector('#elem2');
-// let elem3 = document.querySelector('#elem3');
-
-// function func() {
-// 	console.log(this.value);
-// }
-// func.call(elem1);
-// func.call(elem2);
-// func.call(elem3);
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('blur', func);
-
-// function func() {
-	
-
-//     let square = () => {
-//         return this.value * this.value;
-//     }
-//     alert( square() );
-// }
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('blur', func);
-
-// function func() {
-// 	alert( square(this) );
-	
-// 	function square(param) {
-// 		return param.value * param.value;
-// 	}
-// }
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('blur', func);
-
-// function func() {
-//     let self = this;
-// 	alert( square() );
-	
-// 	function square() {
-// 		return self.value * self.value;
-// 	}
-// }
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('blur', parent);
-
-// function parent() {
-// 	console.log(this.value); // что выведет?
-	
-// 	function child() {
-// 		console.log(this.value); // что выведет?
-// 	}
-// 	child();
-// }
-
-
-// let parent = document.querySelector('#parent');
-// let button = document.querySelector('button');
-// let block  = document.querySelector('#block');
-
-// button.addEventListener('click', function(event) {
-// 	block.classList.add('active');
-//     event.stopPropagation();
-// });
-
-// parent.addEventListener('click', function() {
-// 	block.classList.remove('active');
-// });
-
-
-
-
-
-
-// let div = document.querySelector('div');
-// div.addEventListener('click', function(event){
-//     if(event.target.tagName == 'DIV'){
-//         console.log('Клик по div');
-//     }
-//     if(event.target.tagName == 'UL'){
-//         console.log('Клик по ul');
-//         event.target.innerHTML += '<li> '+ 4 + ' </li>';
-//     }
-//     if(event.target.tagName == 'LI'){
-//         console.log('Клик по li');
-//         event.target.textContent += '!';
-//     }
-// });
-
-
-
-// let elem1 = document.querySelector('#elem1');
-// let elem2 = document.querySelector('#elem2');
 // let paragraph = document.querySelector('#paragraph');
-// let link = document.querySelector('#link');
-// link.addEventListener('click', function(event){
-//     event.preventDefault();
-//     paragraph.textContent = +elem1.value + + elem2.value;
-// });
+// setTimeout(function(){
+//     paragraph.innerHTML = "Привет";
+// },10000);
+
+// let paragraph = document.querySelector('#paragraph');
+
+// setInterval(function(){
+//     let date = new Date();
+//     paragraph.innerHTML = date.getHours() +':'+ date.getMinutes() +':'+ date.getSeconds();
+// },1000);
+
+
+
+
+// let paragraph = document.querySelector('#paragraph');
+// setInterval(function(){
+//     paragraph.classList.toggle('green');
+// },1000);
+
+
+
+
+
+
 
 // let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(event){
-//     event.preventDefault();
-//     elem.textContent += elem.href;
+// let start = document.querySelector('#start');
+// let end = document.querySelector('#end');
+// let timerId;
+// function func(){
+//     timerId = setInterval(function(){
+//         elem.value++;
+//     },1000);
+//     this.removeEventListener('click', func);
+// }
+// start.addEventListener('click', func); 
+// end.addEventListener('click', function(){
+//     clearInterval(timerId);
+//     start.addEventListener('click', func);
 // });
 
+
+
+
 // let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(event){
-//     if(event.ctrlKey){
-//         event.target.textContent += 1;
-//     }
-//     if(event.shiftKey){
-//         event.target.textContent += 2;
-//     }
+// let btn = document.querySelector('#btn');
+// let paragraph = document.querySelector('#paragraph');
+// let timerId;
+// btn.addEventListener('click', function func(){
+//     paragraph.innerHTML = Number(elem.value);
+
+//     timerId = setInterval(function(){
+//         paragraph.innerHTML--;
+//         if(paragraph.innerHTML == 0){
+//             clearInterval(timerId);
+//         }
+//     },1000);
+
+//     btn.removeEventListener('click', func);
 // });
+
+
+
+
+
+// let elem = document.querySelector('#elem');
+// let paragraph = document.querySelector('#paragraph');
+// let timerId;
+// elem.addEventListener('blur', function func(){
+//     paragraph.innerHTML = Number(elem.value);
+//     timerId = setInterval(function(){
+//         paragraph.innerHTML--;
+//         if(paragraph.innerHTML == 0){
+//             clearInterval(timerId);
+//         }
+        
+//     },1000);
+//     this.removeEventListener('blur', func);
+    
+// })
+
+
+
+// let elem = document.querySelector('#elem');
+// setInterval(function(){
+//     elem.value = Number(elem.value) * Number(elem.value);
+// },1000);
+
 
 
 
 // let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(event){
-//     if(event.altKey){
-//         this.style.color = 'red';
-//     }
-// });
-
 // let paragraph = document.querySelector('#paragraph');
-// let elem = document.querySelector('#elem');
-
-// elem.addEventListener('keydown', function(event){
-//     if(event.key == 'Enter'){
-//         paragraph.textContent = elem.value;
-//         elem.value = '';
-//     }
+// let timerId;
+// btn.addEventListener('click', function func(){
+//     timerId = setInterval(function(){
+//         paragraph.innerHTML = Number(paragraph.innerHTML) - 1;
+//         if(paragraph.innerHTML == 0){
+//         clearInterval(timerId);
+//     }  
+//     } ,1000);
+//     this.removeEventListener('click', func);
+    
 // });
 
 
 
 
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(event){
-//     if(event.target.tagName == 'LI'){
-//         event.target.textContent += '!';
-//     }
-//     if(event.target.tagName == 'UL'){
-//         elem.innerHTML += '<li>'+'text'+'</li>';
-//     }
+// let btn = document.querySelector('#btn');
+// let paragraph = document.querySelector('#paragraph');
+
+// btn.addEventListener('click', function func(){
+//     setInterval(function(){
+//         paragraph.innerHTML = Number(paragraph.innerHTML) + 1; 
+//     },1000);
+//     this.removeEventListener('click', func);
 // });
 
 // let elem = document.querySelector('#elem');
 
-// elem.addEventListener('click', func);
-// elem.addEventListener('dblclick', func);
+// elem.addEventListener('click', function() {
+// 	setInterval(function(self) {
+// 		self.value--;
+// 	}, 1000, this);
+// });
 
-// function func(event) {
-// 	if(event.type == 'click'){
-//         elem.style.color = 'green';
-//     }
-//     if(event.type == 'dblclick'){
-//         elem.style.color = 'red';
-//     }
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function() {
+// 	setInterval(()=> {
+// 		this.value = Number(this.value) + 1;
+// 	}, 1000);
+// });
+
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function() {
+//     let self = this;
+// 	setInterval(function() {
+// 		self.value = Number(self.value) + 1;
+// 	}, 1000);
+// });
+
+
+// let elem = document.querySelector('#elem');
+// let timerId = setInterval(function(){
+//     elem.value = Number(elem.value) - 1;
+//     if(elem.value == 0){
+//         clearInterval(timerId);
 // }
+// },1000);
 
 
 // let elem = document.querySelector('#elem');
-// elem.addEventListener('mousemove', function(event){
-//     elem.textContent = event.clientX + ' : ' + event.clientY;
+// setInterval(function(){
+//     elem.value = Number(elem.value) - 1;
+// },1000);
+
+// let elem = document.querySelector('#elem');
+
+// setInterval(function() {
+// 	elem.value = Number(elem.value) + 1;
+// }, 1000);
+
+
+
+
+
+
+
+
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
+
+// let timerId; // сделаем переменную глобальной
+// function func() {
+// 	let i = 0;
+	
+// 	timerId = setInterval(function() {
+// 		console.log('!')
+// 	}, 1000);
+//     this.removeEventListener('click', func);
+// }
+// start.addEventListener('click', func);
+
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+//     start.addEventListener('click', func);
 // });
 
 
 
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(event){
-//     console.log(event);
+
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
+
+// let timerId;
+
+// start.addEventListener('click', function() {
+// 	timerId = setInterval(function() {
+// 		let date = new Date;
+// 		console.log(date.getMinutes() + ' ' + date.getSeconds());
+// 	}, 1000);
 // });
 
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+// });
+
+
+
+
+
+
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
+
+// let timerId;
+
+// start.addEventListener('click', function() {
+// 	timerId = setInterval(function() {
+// 		let date = new Date;
+// 		console.log(date.getMinutes() + ' ' + date.getSeconds());
+// 	}, 1000);
+// });
+
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+// });
+
+
+
+
+
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
+
+// let timerId;
+
+// start.addEventListener('click', function() {
+// 	timerId = setInterval(function() {
+// 		let date = new Date;
+// 		console.log(date.getMinutes() + ' ' + date.getSeconds());
+// 	}, 1000);
+// });
+
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+// });
+
+
+
+
+
+
+
+// let start = document.querySelector('#start');
+// let stop  = document.querySelector('#stop');
+// let timerId;
+// start.addEventListener('click', function() {
+// 	 timerId = setInterval(function() {
+// 		let date = new Date;
+// 		console.log(date.getMinutes() + ' ' + date.getSeconds());
+// 	}, 1000);
+// });
+
+// stop.addEventListener('click', function() {
+// 	clearInterval(timerId);
+// });
+
+
+
+
+
+// let i = 100;
+// let start = document.querySelector('#start');
+// let end = document.querySelector('#end');
+// let timerId;
+// start.addEventListener('click', function funcStart(){
+//     timerId = setInterval(function(){
+//         console.log(i--);
+//     },1000);
+//     if(i == 0){
+//         clearInterval(timerId);
+//     }
+// });
+// end.addEventListener('click', function(){
+//     clearInterval(timerId);
+// });
+
+
+
+
+// let i = 100;
+
+// let btn = document.querySelector('#btn');
+// btn.addEventListener('click', function func(){
+//     setInterval(function(){
+//         console.log(--i);
+//     } ,1000);
+// this.removeEventListener('click', func);
+// });
+
+
+
+
+// let i = 100;
+
+// let btn = document.querySelector('#btn');
+// btn.addEventListener('click', function(){
+//     setInterval(function(){
+//         console.log(--i);
+//     } ,1000);
+// });
+
+
+
+
+// let i = 10;
+
+// let timerId = setInterval(function(){
+//     console.log(--i);
+//     if(i ==0){
+//         clearInterval(timerId);
+//     }
+// },1000);
+
+
+
+
+// let i = 100;
+
+// setInterval(function(){
+//     console.log(--i);
+// }, 1000);
+
+
+
+// setInterval(func, 3000);
+
+// function func (){
+//     console.log('Привет');
+// }
 
 
 
