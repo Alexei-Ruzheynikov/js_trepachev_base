@@ -4,417 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Функции и DOM</title>
+    <title>Модули через замыкания</title>
     <style>
-td {
-	width: 50px;
-	height: 50px;
-	border: 1px solid black;
-}
+
     </style>
 </head>
 <body>
 
-
-
-
-    <!-- <p class="elem">1</p>
-    <p class="elem">2</p>
-    <p class="elem">3</p>
-    <p class="elem">4</p>
-    <p class="elem">5</p> -->
-
-<!-- <p class="elem">1</p>
-<p class="elem">2</p>
-<p class="elem">3</p>
-<p class="elem">4</p>
-<p class="elem">5</p> -->
 <!-- 
-<p class="elem">1</p>
-<p class="elem">2</p>
-<p class="elem">3</p>
-<p class="elem">4</p>
-<p class="elem">5</p> -->
+<input type="text" class="elems" value="1">
+<input type="text" class="elems" value="2">
+<input type="text" class="elems" value="3">
+<input type="submit" id="btn"> -->
 
 
 
-<!-- <p id="elem1">1</p>
-<p id="elem2">2</p> -->
 
-<!-- 
-<p class="elem">1</p>
-<p class="elem">2</p>
-<p class="elem">3</p>
-<p class="elem">4</p>
-<p class="elem">5</p>
- -->
-
-
-
-<!-- <input type="text" id="elem"> -->
-
-<!-- 
-
-<p class="elem">1</p>
-<p class="elem">2</p>
-<p class="elem">3</p>
-<p class="elem">4</p>
-<p class="elem">5</p> -->
-
-<!-- <ul id="elem">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-</ul> -->
-
-
-<!-- <ul id="elem">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-</ul> -->
-
-<!-- <div id="elem"></div>
-<hr> -->
-
-<!-- <div id="elem">
-	<p>1</p>
-	<p>2</p>
-	<p>3</p>
-</div> -->
-
-<!-- <div id="elem">
-	<p>1</p>
-	<p>2</p>
-	<p>3</p>
-</div> -->
-
-
-
-<!-- 
-<div id="elem">
-</div> -->
-
-<!-- <div id="elem">
-</div> -->
 
 
 <script>
 
-// let div = document.querySelector('#elem');
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-// let cols = 5;
+;(function(){
 
-// let twoDimArr = convertArr(arr, cols);
-// let normalTwoDimArr = normalizeArr(twoDimArr, cols, '-');
+function avg1(arr) {
+	return sum(arr, 1) / arr.length;
+}
 
-// let table = createTableByArr(normalTwoDimArr);
+function avg2(arr) {
+	return sum(arr, 2) / arr.length;
+}
 
-// div.appendChild(table);
+function avg3(arr) {
+	return sum(arr, 3) / arr.length;
+}
 
-// normalizeArr(arr, cols, '-');
-
-// function normalizeArr(twoDimArr, cols, separate){
-//     for(let i = 0; i < twoDimArr.length;i++){
-//         for(let j = 0; j < twoDimArr[i].length; j++){
-//             if( twoDimArr[i][j] == undefined){
-//                 twoDimArr[i][j] = separate;
-//             }
-//         }
-//     }
-//     return twoDimArr;
-// }
-
-// function convertArr(arr, cols){
-//     let newArr = [];
-//     let rows = arr.length / cols;
-//     for(let i = 0,k =0; i < rows; i++){
-//         newArr[i] = [];
-//         for(let j = 0; j < arr.length; j++){
-//             if(newArr[i].length < cols){
-//                 newArr[i].push(arr[k]);
-//                 k++;
-//             }           
-//         }
-//     }
-//     console.log(newArr);
-//     return newArr;
-// }
-// function createTableByArr(arr){
-//     let table = document.createElement('table');
-//     for(let i = 0; i < arr.length;i++){
-//     let tr = document.createElement('tr');
-//         for(let j = 0; j < arr[i].length; j++){
-//             let td = document.createElement('td');
-//             td.innerHTML = arr[i][j];
-//             tr.appendChild(td);
-//         }
-//         table.appendChild(tr);
-//     }
-//     return table;
-// }
-
-
-
-
-
-
-
-
-// let div = document.querySelector('#elem');
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-// let cols = 4;
-// let table = createTableByArr(convertArr(arr, cols));
-// div.appendChild(table);
-
-// function convertArr(arr, cols){
-//     let newArr = [];
-//     let rows = arr.length / cols;
-//     for(let i = 0,k =0; i < rows; i++){
-//         newArr[i] = [];
-//         for(let j = 0; j < arr.length; j++){
-//             if(newArr[i].length < cols){
-//                 newArr[i].push(arr[k]);
-//                 k++;
-//             }           
-//         }
-//     }
-//     console.log(newArr);
-//     return newArr;
-// }
-// function createTableByArr(arr){
-//     let table = document.createElement('table');
-//     for(let i = 0; i < arr.length;i++){
-//     let tr = document.createElement('tr');
-//         for(let j = 0; j < arr[i].length; j++){
-//             let td = document.createElement('td');
-//             td.innerHTML = arr[i][j];
-//             tr.appendChild(td);
-//         }
-//         table.appendChild(tr);
-//     }
-//     return table;
-// }
-
-
-
-// let div = document.querySelector('#elem');
-
-// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-// let table = createTableByArr(arr);
-
-// div.appendChild(table);
-
-// function createTableByArr(arr){
-//     let table = document.createElement('table');
-
-//     for(let i = 0; i < arr.length;i++){
-//         console.log(arr[i]);
-//     let tr = document.createElement('tr');
-
-//         for(let j = 0; j < arr[i].length; j++){
-//             // console.log(arr[i]);
-//             let td = document.createElement('td');
-//             td.innerHTML = arr[i][j];
-//             tr.appendChild(td);
-
-//             // break;
-//         }
-//         table.appendChild(tr);
-//     }
-//     return table;
-// }
-
-
-// let div = document.querySelector('#elem');
-// div.appendChild(createTable(4,4));
-
-// function createTable(rows, cols) {
-// 	let table = document.createElement('table');
+// вспомогательная функция
+function sum(arr, pow) {
+	let res = 0;
 	
+	for (let elem of arr) {
+		res += elem ** pow;
+	}
+	
+	return res;
+
     
-// 	for (let i = 0; i < rows;i++) {
-//         let tr = document.createElement('tr');
-// 		for (let j = 0; j < cols; j++) {
-// 			let td = document.createElement('td');
-//             tr.appendChild(td);
-// 		}
-//         table.appendChild(tr);
+}
+
+window.math = {avg1, avg2, avg3};
+})();
+console.log(math.avg3([5,5]));
+
+
+
+
+// ;(function() {
+//     let module = {};
+// 	module.str1 = 'переменная модуля';
+// 	module.str2 = 'переменная модуля';
+// 	let str3 = 'переменная модуля';
+	
+// 	module.func1 = function() {
+// 		alert('функция модуля');
 // 	}
-	
-// 	return table;
-// }
-
-
-
-
-// let div = document.querySelector('#elem');
-
-// let table = createTable(3, 4);
-// table.style.backgroundColor = 'red';
-
-// div.appendChild(table);
-
-// function createTable(rows, cols) {
-// 	let table = document.createElement('table');
-	
-    
-// 	for (let i = 0; i < rows;i++) {
-//         let tr = document.createElement('tr');
-// 		for (let j = 0; j < cols; j++) {
-// 			let td = document.createElement('td');
-//             tr.appendChild(td);
-// 		}
-//         table.appendChild(tr);
+// 	module.func2 = function() {
+// 		alert('функция модуля');
 // 	}
-	
-// 	return table;
-// }
-
-
-// let div = document.querySelector('#elem');
-// createTable(3, 4, div);
-
-// let div1 = document.querySelector('#elem1');
-// createTable(3, 4, div1);
-
-// let div2 = document.querySelector('#elem2');
-// createTable(5, 6, div2);
-
-// function createTable(rows, cols, parent) {
-// 	let table = document.createElement('table');
-	
-// 	// тут создадим таблицу с rows рядами и cols колонками
-    
-// 	for (let i = 0; i < rows;i++) {
-//         let tr = document.createElement('tr');
-// 		for (let j = 0; j < cols; j++) {
-// 			let td = document.createElement('td');
-//             tr.appendChild(td);
-// 		}
-//         table.appendChild(tr);
+// 	module.func3 = function() {
+// 		alert('функция модуля');
 // 	}
-	
-// 	parent.appendChild(table);
-// }
-
-
-
-
-
-// let elem = document.querySelector('#elem');
-// let arr = [55,66,77];
-// function appendElem(elem,arr){
-//     for(let i = 0; i<arr.length; i++){
-//         let li = document.createElement('li');
-//         li.innerHTML = arr[i];
-//         elem.appendChild(li);
-//     }
-// }
-// appendElem(elem, arr);
-
-// let elem = document.querySelector('#elem');
-// function appendElem(elem,text){
-//     let li = document.querySelector('li');
-//     li.innerHTML = text;
-//     elem.appendChild(li);
-// }
-// appendElem(elem, 'lik');
-
-// let elems = document.querySelectorAll('.elem');
-// appendText(elems, 'lol');
-// function appendText(elems, text){
-// for(let elem of elems){
-//     elem.innerHTML += text;
-// }
-// }
-
-
-
-// let input = document.querySelector('#elem');
-// setValue(input, 'texts');
-
-// function setValue(input, text){
-// input.value = text;
-// }
-
-
-
-
-// let elems = document.querySelectorAll('.elem');
-// for(let elem of elems){
-//     appendText(elem, 'lolchic' );
-// }
-
-// function appendText(elem, text){
-//     elem.innerHTML += text;
-// }
-
-// forEach('.elem', function(elem, index) {
-// 	elem.innerHTML = index + elem.innerHTML ;
-// });
-
-
-// function forEach(selector, func) {
-// 	let elems = document.querySelectorAll(selector);
-	
-// 	for (let i = 0; i < elems.length; i++) {
-// 		func(elems[i], i);
+// 	module.func4 = function() {
+// 		alert('функция модуля');
 // 	}
-// }
-
-
-
-// forEach('.elem', function(elem) {
-// 	elem.innerHTML +='!';
-// });
-
-
-// function forEach(selector, func) {
-// 	let elems = document.querySelectorAll(selector);
-	
-// 	for (let elem of elems) {
-// 		func(elem);
+// 	module.func5 = function() {
+// 		alert('функция модуля');
 // 	}
-// }
+
+//     window.module = module;
+// })();
+// console.log(module);
 
 
-
-// forEach('.elem', function(elem) {
-// 	elem.innerHTML = elem.innerHTML ** 2;
-// });
-
-
-// function forEach(selector, func) {
-// 	let elems = document.querySelectorAll(selector);
+// ;(function() {
+// 	let str1 = 'переменная модуля1';
+// 	let str2 = 'переменная модуля2';
+// 	let str3 = 'переменная модуля3';
 	
-// 	for (let elem of elems) {
-// 		func(elem);
+// 	function func1() {
+// 		alert('функция модуля1');
 // 	}
-// }
-
-
-// function appendText(select,text){
-// let elems = document.querySelectorAll(select);
-//     for(let elem of elems){
-//         elem.innerHTML += text;
-//     }
-// }
-
-
-// function setText(select, text) {
-// 	let elem = document.querySelector(select);
-// 	elem.innerHTML = text;
-// }
-
-// function setAttr(select, name, value){
-//     let elem = document.querySelector(select);
-//     elem.name = value;
-// }
+// 	function func2() {
+// 		alert('функция модуля2');
+// 	}
+// 	function func3() {
+// 		alert('функция модуля3');
+// 	}
+//     window.str1 = str1;
+//     window.func1 = func1;
+//     window.func3 = func3;
+// })();
+// console.log(func3());
 
 
 
-    </script>
+
+
+
+
+
+
+// ;(function(array,button){
+
+// let inputs = document.querySelectorAll(array);
+// let btn = document.querySelector(button);
+// let res = 0;
+
+//     btn.addEventListener('click', function(){
+//         for(let input of inputs){
+//              res += +input.value;
+//         }
+//         console.log(res);
+//     });
+
+
+// })('.elems','#btn');
+
+
+
+
+
+
+
+</script>
     <!-- <script src="main.js"></script> -->
 </body>
 </html>
