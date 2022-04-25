@@ -4,1369 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Манипулирование элементами</title>
+    <title>Функции и DOM</title>
     <style>
 td {
 	width: 50px;
 	height: 50px;
 	border: 1px solid black;
 }
-.through {
-    text-decoration: line-through;
-}
-.bg-green{
-    background-color: green;
-}
-.bg-red{
-    background-color: red;
-}
-.hidden{
-    display: none;
-}
-.active{
-    color: red;
-}
-.color1 {
-	background: red;
-}
-.color2 {
-	background: green;
-}
     </style>
 </head>
 <body>
 
-    <!-- <ol id="elem"></ol> -->
-
-
-    <!-- <ol id="elem"></ol>
-    <button id="button">click me</button> -->
-
-<!-- <ol id="elem"></ol>
-<input type="submit" id="btn"> -->
-
-<!-- <ul id="elem"></ul> -->
-
-<!-- <div id="elem"></div>
-<p id="paragraph"></p> -->
-
-
-<!-- <div id="parent"></div> -->
-
-<!-- <ul id="elem"></ul> -->
-
-<!-- <ul id="elem"></ul> -->
-
-<!-- <ul id="elem"></ul> -->
 
 
 
-<!-- <table id="table"></table> -->
+    <!-- <p class="elem">1</p>
+    <p class="elem">2</p>
+    <p class="elem">3</p>
+    <p class="elem">4</p>
+    <p class="elem">5</p> -->
 
-
-<!-- <table id="table"></table> -->
-
-
-<!-- <table id="table"></table>
-<input type="text" id="one" >
-<input type="text" id="two" > -->
-
-<!-- <table id="table"></table> -->
-
-
-<!-- <table id="table"></table> -->
-
-<!-- <table id="table"></table> -->
-
-<!-- <table id="table"></table> -->
-
-
-
-<!-- <table id="table"></table> -->
+<!-- <p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<p class="elem">5</p> -->
+<!-- 
+<p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<p class="elem">5</p> -->
 
 
 
-<!-- <table id="table"></table> -->
-
-
-
-<!-- <table id="table"></table> -->
+<!-- <p id="elem1">1</p>
+<p id="elem2">2</p> -->
 
 <!-- 
-<table id="table"></table>
-<input type="submit" id="btn"> -->
-
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-<input type="submit" id="btn"> -->
-
-<!-- 
-<table id="table">
-    <tr>
-        <td>2</td>
-        <td>4</td>
-        <td>6</td>
-    </tr>
-
-    <tr>
-        <td>7</td>
-        <td>3</td>
-        <td>5</td>
-    </tr>
-</table>
-
-<input type="submit" id="btn"> -->
-
-
-
-<!-- <table id="table">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table> -->
-<!-- 
-
-
-
-<table id="table">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table> -->
-
-
-
-
-<!-- <table id="table">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table> 
+<p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<p class="elem">5</p>
  -->
 
 
 
- <!-- <table id="table">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>  -->
-
-
-<!-- <table id="table">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>  -->
-
-
-
-<!-- <ul id="parent">
-	<li>1</li>
-	<li id="elem">2</li>
-	<li>3</li>
-</ul>
-
-<input type="submit" id="button"> -->
-
-
+<!-- <input type="text" id="elem"> -->
 
 <!-- 
-<ul id="parent">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-</ul>
 
-<input type="submit" id="button"> -->
-
-<!-- 
-<ul>
-	<li>1</li>
-	<li id="elem">2</li>
-	<li>3</li>
-</ul> -->
-
-
-<!-- <ul>
-	<li>1</li>
-	<li id="elem">2</li>
-	<li>3</li>
-</ul> -->
-
-
-<!-- <ul id="parent">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-</ul> -->
-
-
-<!-- <ul id="parent">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-</ul>
-<input type="submit" id="button">
- -->
-
-<!-- 
- <div id="parent">
-	<p id="elem">text</p>
-	<a href="" id="remove">remove</a>
-</div> -->
-
-
-<!-- <ul id="parent">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-</ul> -->
-
-
-<!-- <table id="table">
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-    </tr>
-</table> -->
+<p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<p class="elem">5</p> -->
 
 <!-- <ul id="elem">
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-	<li>text</li>
-</ul> -->
-
-
-
-
-<!-- <ul id="parent">
-	<li>text</li>
-	<li>text</li>
-	<li id="elem">text</li>
-	<li>text</li>
-	<li>text</li>
-</ul> -->
-
-
-<!-- <div id="elem" style="border: 1px solid red;">
-	<p>text</p>
-	<p>text</p>
-	<p>text</p>
-</div> -->
-
-
-<!-- 
-<div id="elem" style="border: 1px solid red;">
-	<p>text</p>
-	<p>text</p>
-	<p>text</p>
-</div> -->
-
-
-<!-- 
-<input type="text" id="elem">
-<input type="submit" id="btn"> -->
-
-
-<!-- <div id="elem" class="www"></div> -->
-
-
-<!-- <p class="paragraph">6</p> -->
-
-
-<!-- <div id="elem1">
-	<p id="elem2"></p>
-</div> -->
-
-<!-- 
-
-<div id="parent">
-	<p id="elem">text</p>
-	<input id="input">
-</div>
- -->
-
-
-
- <!-- <div id="parent">
-	<p id="elem">text</p>
-</div> -->
-
-
-<!-- <div id="parent">
-	<p id="elem">text</p>
-</div> -->
-
-<!-- 
-<ul id="elems">
     <li>1</li>
     <li>2</li>
     <li>3</li>
-    <li>4</li>
-    <li>5</li>
 </ul> -->
 
 
-<!-- <table id="table">
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-    </tr>
-</table> -->
+<!-- <ul id="elem">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul> -->
 
-<!-- 
-<div id="parent">
-	<p><span>text1</span></p>
-	<p><span>text2</span></p>
-	<p><span>text3</span></p>
+<!-- <div id="elem"></div>
+<hr> -->
+
+<!-- <div id="elem">
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+</div> -->
+
+<!-- <div id="elem">
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
 </div> -->
 
 
-<!-- <div id="parent">
-	<p>text1</p>
-	<p>text2</p>
-	<p>text3</p>
+
+<!-- 
+<div id="elem">
 </div> -->
 
-
-<!-- <p>text1</p>
-<p>text2</p>
-<p>text3</p>
-<p>text4</p> -->
-
-<!-- <p>text1</p>
-<p>text2</p>
-<p>text3</p>
-<p>text4</p> -->
-
-
-<!-- <table id="table">
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-    </tr>
-</table> -->
-
-<!-- 
-<table id="table">
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-    </tr>
-</table> -->
-
-
-
-
-<!-- <p id="elem">text</p>
-<input type="submit" id="btn" value="btn"> -->
-
-
-
-<!-- 
-<p id="elem1">1</p><button data-elem="elem1">toggle</button>
-<p id="elem2">2</p><button data-elem="elem2">toggle</button>
-<p id="elem3">3</p><button data-elem="elem3">toggle</button>
- -->
-
-
- <!-- <p>1</p><button>toggle</button>
- <p>2</p><button>toggle</button>
- <p>3</p><button>toggle</button> -->
-
-
-<!-- 
-
- <p>1</p><button>toggle</button>
- <p>2</p><button>toggle</button>
- <p>3</p><button>toggle</button> -->
-
-
-<!-- <ul>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-</ul> -->
-
-<!-- <ul>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-    <li>elem</li>
-</ul> -->
-
-<!-- 
-<table id="table">
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-</table> -->
-
-
-<!-- <table id="table">
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-</table>  -->
-
-
-<!-- <table id="table">
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-</table>  -->
-
-
-<!-- 
-<table id="table">
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-    <tr>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-        <td>elem</td>
-    </tr>
-</table>  -->
-
-
-
-<!-- <ul id="ul"></ul> -->
-
-<!-- <ul id="ul"></ul> -->
-<!-- 
-<ul id="ul"></ul>
-<input type="submit" id="btn" value="Жми"> -->
-
-<!-- 
-<table id="table">
-
-</table> -->
-
-
-
-<!-- <table id="table">
-	<tr>
-		<td data-col="1"></td>
-		<td data-col="2"></td>
-		<td data-col="3"></td>
-	</tr>
-	<tr>
-		<td data-col="1"></td>
-		<td data-col="2"></td>
-		<td data-col="3"></td>
-	</tr>
-	<tr>
-		<td data-col="1"></td>
-		<td data-col="2"></td>
-		<td data-col="3"></td>
-	</tr>
-</table> -->
-
-
-<!-- <table id="table">
-	<tr>
-		<td data-row="1" data-col="1"></td>
-		<td data-row="1" data-col="2"></td>
-		<td data-row="1" data-col="3"></td>
-	</tr>
-	<tr>
-		<td data-row="2" data-col="1"></td>
-		<td data-row="2" data-col="2"></td>
-		<td data-row="2" data-col="3"></td>
-	</tr>
-	<tr>
-		<td data-row="3" data-col="1"></td>
-		<td data-row="3" data-col="2"></td>
-		<td data-row="3" data-col="3"></td>
-	</tr>
-</table>
-<input type="submit" id="btn"> -->
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table> -->
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table> -->
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table> -->
-
-<!-- 
-<table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-    <tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-</table> -->
-
-
-
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-    <tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-</table> -->
-
-
-<!-- <table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-    <tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-</table> -->
-
-
-<table id="table">
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-    <tr>
-		<td></td>
-		<td></td>
-		<td></td>
-        <td></td>
-	</tr>
-</table>
-
+<!-- <div id="elem">
+</div> -->
 
 
 <script>
 
+// let div = document.querySelector('#elem');
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// let cols = 5;
 
-let tds = document.querySelectorAll('#table tr:nth-child(even) td:nth-child(odd)');
-for(let td of tds){
-    td.classList.add('bg-red');
-}
+// let twoDimArr = convertArr(arr, cols);
+// let normalTwoDimArr = normalizeArr(twoDimArr, cols, '-');
 
+// let table = createTableByArr(normalTwoDimArr);
 
-// let tds = document.querySelectorAll('#table tr:nth-child(1) td:nth-child(3)');
-// for(let td of tds){
-//     td.classList.add('bg-red');
-// }
+// div.appendChild(table);
 
-// let tds = document.querySelectorAll('#table tr:nth-child(3)');
-// for(let td of tds){
-//     td.classList.add('bg-red');
-// }
+// normalizeArr(arr, cols, '-');
 
-
-// let trs = document.querySelectorAll('#table tr');
-// for(let i = 0; i < trs.length; i++){
-//     let tds = trs[i].querySelectorAll('#table td');
-//     for(let j = 0; j < tds.length; j++){
-//         tds[j].addEventListener('click', function(){
-//             console.log(tds[j]);
-//             if(i == j){
-//                 this.classList.add('bg-red');
-//             } else {
-//                 this.classList.add('bg-green');
-//             }
-//         });
-//     }
-// }
-
-
-
-    
-// let table = document.querySelector('#table');
-// let trs = document.querySelectorAll('#table tr');
-// let j = 1;
-// for(let tr of trs){
-//     let k = 1;
-//     let tds = tr.querySelectorAll('#table td');
-//     for(let td of tds){
-//         let one = j;
-//         let two = k++;
-//         if(k == 4){
-//             k = 1;
-//         }
-//         td.addEventListener('click', function(){
-//             this.textContent = one;
-//             this.textContent += two;
-//         });
-//     }
-//     j++;
-// }
-
-
-
-// let trs = document.querySelectorAll('#table tr');
-// let j = 1;
-// for(let tr of trs){
-//     let k = 1;
-    
-//     let tds = tr.querySelectorAll('#table td');
-    
-//     for(let td of tds){
-//         // console.log(j);
-//         td.dataset.row = j;
-//         td.dataset.col = k++;
-        
-//         if(k == 4){
-//             k = 1;
-//         }
-//     }
-//     j++;
-// }
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for(let tr of trs){
-//     let k = 1;
-//     let tds = document.querySelectorAll('#table td');
-//     for(let td of tds){
-//         td.dataset.col = k++;
-//         if(k == 4){
-//             k = 1;
-//         }
-//     }
-// }
-
-// let tds = document.querySelectorAll('#table td');
-// for(let td of tds){
-//     td.dataset.col = k++;
-// }
-
-
-// let col = 2;
-// let row = 3;
-// let btn = document.querySelector('#btn');
-// let tds = document.querySelectorAll('#table td');
-// btn.addEventListener('click', function(){
-//     for(let i = 0; i < tds.length;i++){
-//         for(let td of tds){
-//             if(td == document.querySelector('#table td[data-row="'+row+'"][data-col="'+col+'"]')){
-//                 td.classList.add('bg-red');
+// function normalizeArr(twoDimArr, cols, separate){
+//     for(let i = 0; i < twoDimArr.length;i++){
+//         for(let j = 0; j < twoDimArr[i].length; j++){
+//             if( twoDimArr[i][j] == undefined){
+//                 twoDimArr[i][j] = separate;
 //             }
 //         }
-//     }   
-// })
-
-
-// let tds = document.querySelectorAll('#table td');
-
-// for(let i = 0; i < tds.length; i++){
-//     tds[i].addEventListener('click', function(){
-//         let thisData = this.dataset.col;
-//         let arrTds = document.querySelectorAll('#table td[data-col="'+thisData+'"]');
-//         for(arrTd of arrTds){
-//             arrTd.classList.add('bg-red');
-//             console.log(this);
-//         }  
-//     });
+//     }
+//     return twoDimArr;
 // }
 
-// for(let td of tds){
-//     td.addEventListener('click', function(){
-//         let tdCol = document.querySelectorAll('#table td[data-col]');
-//         td.classList.add('bg-red');
-//     });
+// function convertArr(arr, cols){
+//     let newArr = [];
+//     let rows = arr.length / cols;
+//     for(let i = 0,k =0; i < rows; i++){
+//         newArr[i] = [];
+//         for(let j = 0; j < arr.length; j++){
+//             if(newArr[i].length < cols){
+//                 newArr[i].push(arr[k]);
+//                 k++;
+//             }           
+//         }
+//     }
+//     console.log(newArr);
+//     return newArr;
 // }
-
-
-
-// let employees = [
-// 	{name: 'employee1', age: 30, salary: 400},
-// 	{name: 'employee2', age: 31, salary: 500},
-// 	{name: 'employee3', age: 32, salary: 600},
-// ];
-// let table = document.querySelector('#table');
-
-
-// for(let employe of employees){
+// function createTableByArr(arr){
+//     let table = document.createElement('table');
+//     for(let i = 0; i < arr.length;i++){
 //     let tr = document.createElement('tr');
-//     table.appendChild(tr);
-//     for(let employ in employe){
-//         let td = document.createElement('td');
-//         td.textContent = employe[employ];
-//         tr.appendChild(td);
-//             td.addEventListener('click', function func(){
-//                 let input = document.createElement('input');
-//                 input.value = td.textContent;
-//                 td.textContent = '';
-//                 td.appendChild(input);
-//                 input.addEventListener('blur', function(){
-//                     td.textContent = input.value;
-//                     td.addEventListener('click', func);
-//                 });
-//                 td.removeEventListener('click', func); 
-//             });
-//     }
-// }
-
-// let arr = [6, 3, 0, 1, 2, 3, 4, 5];
-// let ul = document.querySelector('#ul');
-// let btn = document.querySelector('#btn');
-
-// for(let i =0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.textContent = arr[i];
-//     ul.appendChild(li);
-
-//     li.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = li.textContent;
-//         li.textContent = '';
-//         li.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             li.textContent = input.value;
-//             li.addEventListener('click', func);
-//         });
-//         li.removeEventListener('click', func); 
-//     });
-
-// }
-
-// btn.addEventListener('click', function(){
-//     let li = document.createElement('li');
-//     ul.appendChild(li);
-
-
-
-//     li.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = li.textContent;
-//         li.textContent = '';
-//         li.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             li.textContent = input.value;
-//             li.addEventListener('click', func);
-//         });
-//         li.removeEventListener('click', func); 
-//     });
-
-
-
-// });
-
-
-
-// func(){
-//             let input = document.createElement('input');
-//         input.value = li.textContent;
-//         li.textContent = '';
-//         li.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             li.textContent = input.value;
-//             li.addEventListener('click', func);
-//         });
-//         li.removeEventListener('click', func); 
-// }
-
-
-
-
-// function addInput(li){
-//     let li = document.createElement('li');
-//     ul.appendChild(li);
-
-
-//     li.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = li.textContent;
-//         li.textContent = '';
-//         li.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             li.textContent = input.value;
-//             li.addEventListener('click', func);
-//         });
-//         li.removeEventListener('click', func); 
-//     });
-// }
-
-
-// let arr = [6, 3, 0, 1, 2, 3, 4, 5];
-// let ul = document.querySelector('#ul');
-// for(let i =0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.textContent = arr[i];
-//     ul.appendChild(li);
-//     li.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = li.textContent;
-//         li.textContent = '';
-//         li.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             li.textContent = input.value;
-//             li.addEventListener('click', func);
-//         });
-//         li.removeEventListener('click', func); 
-//     });
-// }
-
-
-
-
-
-// let arr = [6, 3, 0, 1, 2, 3, 4, 5];
-// let ul = document.querySelector('#ul');
-// for(let i =0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.textContent = arr[i];
-//     ul.appendChild(li);
-// }
-
-
-
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for(let i =0; i < trs.length; i++){
-//     let tds = trs[i].querySelectorAll('#table tr td');
-//     for(let j=0;j < tds.length;j++){
-//         tds[j].addEventListener('click', function(){
-//             let activeTds = trs[i].querySelectorAll('#table tr td.active');
-//             console.log(activeTds.length);
-//             // console.log(trs[i-1]);
-//                 // let trsPrev = trs[i-1].querySelectorAll('#table tr td');
-//                 // let trsNext = trs[i+1].querySelectorAll('#table tr td');
-//                 // console.log(trsPrev[j]);
-//                 // console.log(trsNext[j]);
-//                 // console.log(tds == trs[0]);
-//             // console.log(tds[j]);
-            
-//             // if(trs[i-1])
-//             if(this.previousElementSibling == null && !(this.nextElementSibling.matches('.active'))  || this.nextElementSibling == null && !(this.previousElementSibling.matches('.active'))  || !(this.previousElementSibling.matches('.active') || this.nextElementSibling.matches('.active'))){
-//                 if (activeTds.length < 5){
-//                     this.classList.add('active');
-//                 }
-//             }
-//         });
-//     }
-// }
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for (let tr of trs){
-//     let tds = tr.querySelectorAll('#table tr td');
-//     for(let td of tds){
-//         td.addEventListener('click', function(){
-//             let activeTds = tr.querySelectorAll('#table tr td.active');
-//             console.log(activeTds.length);
-//             if(this.previousElementSibling == null && !(this.nextElementSibling.matches('.active'))  || this.nextElementSibling == null && !(this.previousElementSibling.matches('.active'))  || !(this.previousElementSibling.matches('.active') || this.nextElementSibling.matches('.active'))){
-//                 if (activeTds.length < 5){
-//                     this.classList.add('active');
-//                 }
-//             }
-//         });
-//     }
-// } 
-
-
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for (let tr of trs){
-//     let tds = tr.querySelectorAll('#table tr td');
-//     for(let td of tds){
-//         td.addEventListener('click', function(){
-//             let activeTds = tr.querySelectorAll('#table tr td.active');
-//             console.log(activeTds.length);
-//             if(this.previousElementSibling == null && !(this.nextElementSibling.matches('.active'))  || this.nextElementSibling == null && !(this.previousElementSibling.matches('.active'))  || !(this.previousElementSibling.matches('.active') || this.nextElementSibling.matches('.active'))){
-//                 if (activeTds.length < 5){
-//                     this.classList.add('active');
-//                 }
-//             }
-//             console.log( );
-//         });
-//     }
-// } 
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for (let tr of trs){
-//     let tds = tr.querySelectorAll('#table tr td');
-//     for(let td of tds){
-//         td.addEventListener('click', function(){
-//             let activeTds = tr.querySelectorAll('#table tr td.active');
-//             console.log(activeTds.length);
-//             if (activeTds.length < 5){
-//                 this.classList.add('active');
-//             }
-//         });
-//     }
-// } 
-
-
-
-
-// let elems = document.querySelectorAll('#table td');
-// let color = 'color1';
-// for(let elem of elems){
-//     elem.addEventListener('click', function(){
-//         if(color == 'color1'){
-//             color = 'color2';
-//         } else {
-//             color = 'color1';
+//         for(let j = 0; j < arr[i].length; j++){
+//             let td = document.createElement('td');
+//             td.innerHTML = arr[i][j];
+//             tr.appendChild(td);
 //         }
-//         this.classList.add(color);
-//     });
-// }
-
-
-
-
-// let elems = document.querySelectorAll('ul li');
-// for(let elem of elems){
-//     elem.addEventListener('click', function(){
-//        this.classList.toggle('active'); 
-//     });
-// }
-
-
-
-// let elems = document.querySelectorAll('ul li');
-// for(let elem of elems){
-//     elem.addEventListener('click', function(){
-//        this.classList.add('active'); 
-//     });
-// }
-
-
-
-// let buttons = document.querySelectorAll('button');
-// for(let button of buttons){
-//     button.addEventListener('click', function(){
-//         this.previousElementSibling.classList.toggle('hidden');
-//     });
-// }
-
-
-
-
-
-
-// let buttons = document.querySelectorAll('button');
-// let elems = document.querySelectorAll('p');
-// for(let i = 0; i< buttons.length; i++){
-//     buttons[i].addEventListener('click', function(){
-//         elems[i].classList.toggle('hidden');
-//     });
-// }
-
-
-
-
-// let buttons = document.querySelectorAll('button');
-// for(let button of buttons){
-//     button.addEventListener('click', function(){
-//        let elem = document.querySelector('#'+ this.dataset.elem);
-//        elem.classList.toggle('hidden'); 
-//     });
+//         table.appendChild(tr);
+//     }
+//     return table;
 // }
 
 
@@ -1376,833 +161,256 @@ for(let td of tds){
 
 
 
-// let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     elem.classList.toggle('hidden');
-// });
+// let div = document.querySelector('#elem');
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// let cols = 4;
+// let table = createTableByArr(convertArr(arr, cols));
+// div.appendChild(table);
 
-
-
-
-
-
-
-// let elems = document.querySelectorAll('#table tr');
-// for(let elem of elems){
-//     let td = document.createElement('td');
-//     let link = document.createElement('a');
-//     link.href = '#';
-//     link.textContent = 'link';
-//     td.appendChild(link);
-//     elem.appendChild(td);
-//     link.addEventListener('click', function(){
-//         elem.classList.toggle('bg-green');
-//         link.preventDefault();
-//     });
+// function convertArr(arr, cols){
+//     let newArr = [];
+//     let rows = arr.length / cols;
+//     for(let i = 0,k =0; i < rows; i++){
+//         newArr[i] = [];
+//         for(let j = 0; j < arr.length; j++){
+//             if(newArr[i].length < cols){
+//                 newArr[i].push(arr[k]);
+//                 k++;
+//             }           
+//         }
+//     }
+//     console.log(newArr);
+//     return newArr;
+// }
+// function createTableByArr(arr){
+//     let table = document.createElement('table');
+//     for(let i = 0; i < arr.length;i++){
+//     let tr = document.createElement('tr');
+//         for(let j = 0; j < arr[i].length; j++){
+//             let td = document.createElement('td');
+//             td.innerHTML = arr[i][j];
+//             tr.appendChild(td);
+//         }
+//         table.appendChild(tr);
+//     }
+//     return table;
 // }
 
 
 
-// let elems = document.querySelectorAll('#table tr');
-// for(let elem of elems){
-//     let td = document.createElement('td');
-//     let link = document.createElement('a');
-//     link.href = '#';
-//     link.textContent = 'link';
-//     td.appendChild(link);
-//     elem.appendChild(td);
-//     link.addEventListener('click', function(){
-//         elem.classList.add('bg-green');
-//     });
+// let div = document.querySelector('#elem');
+
+// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// let table = createTableByArr(arr);
+
+// div.appendChild(table);
+
+// function createTableByArr(arr){
+//     let table = document.createElement('table');
+
+//     for(let i = 0; i < arr.length;i++){
+//         console.log(arr[i]);
+//     let tr = document.createElement('tr');
+
+//         for(let j = 0; j < arr[i].length; j++){
+//             // console.log(arr[i]);
+//             let td = document.createElement('td');
+//             td.innerHTML = arr[i][j];
+//             tr.appendChild(td);
+
+//             // break;
+//         }
+//         table.appendChild(tr);
+//     }
+//     return table;
 // }
 
 
+// let div = document.querySelector('#elem');
+// div.appendChild(createTable(4,4));
 
-// let elems = document.querySelectorAll('p');
-// for(elem of elems){
-//     let textValue = elem.textContent;
-//     elem.innerHTML = '<span>'+ textValue +'</span>';
-//     let remove = document.createElement('a');
-//     remove.href = '#';
-//     remove.textContent = 'remove';
-//     elem.appendChild(remove);
-//     remove.addEventListener('click', function(){
-//         this.parentElement.firstElementChild.classList.add('through');
-//         remove.remove();
-//         this.preventDefault();
-//     });
-// }
-
-
-
-// let elems = document.querySelectorAll('p');
-// for(elem of elems){
-//     let textValue = elem.textContent;
-//     elem.innerHTML = '<span>'+ textValue +'</span>';
-//     let remove = document.createElement('a');
-//     remove.href = '#';
-//     remove.textContent = 'remove';
-//     elem.appendChild(remove);
-//     remove.addEventListener('click', function(){
-//         this.parentElement.firstElementChild.classList.add('through');
-//         this.preventDefault();
-//     });
-// }
-
-
-
-
-
-
-// let elems = document.querySelectorAll('#parent p');
-// for(let elem of elems){
-//     let elemContent = elem.textContent;
-//     elem.innerHTML = '<span>'+elemContent+'</span>';
-//     let link = document.createElement('a');
-//     elem.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = elem.textContent;
-//         elem.textContent = '';
-//         link.href = '#';
-//         link.textContent = 'remove';
-//         elem.appendChild(input);
-//         elem.insertAdjacentElement('beforeEnd', link);
-//         input.addEventListener('blur', function(){
-//             elem.textContent = input.value;
-//             elem.addEventListener('click', func);
-//         })
-//         link.addEventListener('click', function(){
-//             elem.parentElement.removeChild(elem);
-//         });
-//         elem.removeEventListener('click', func);
-//     });
-// }
-
-
-
-// let elems = document.querySelectorAll('#parent p span');
-// for(let elem of elems) {
-//     let link = document.createElement('a');
-//     elem.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         link.href = '#';
-//         link.textContent = 'remove';
-//         input.value = elem.textContent;
-//         elem.textContent = '';
-//         elem.appendChild(input);
-//         elem.insertAdjacentElement('afterEnd', link);
-//         input.addEventListener('blur', function(){
-//             elem.textContent = input.value;
-//             // elem.parentElement.removeChild(this);
-//             elem.addEventListener('click', func);    
-//         })
-
-//         link.addEventListener('click', function(){
-//             elem.parentElement.parentElement.removeChild(elem.parentElement);
-//         });
-//         elem.removeEventListener('click', func);
-//     });
-// }
-
-
-
-
-
-
-
-
-
-// let elems = document.querySelectorAll("#table td");
-
-// for(let elem of elems){
-
-//     elem.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = elem.textContent;
-//         elem.textContent = '';
-//         elem.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             elem.textContent = input.value;
-//             elem.addEventListener('click', func);
-//         })
-//         elem.removeEventListener('click', func);
-//     });
-
-// }
-
-
-// let elems = document.querySelectorAll('#elems li');
-// for(let elem of elems){
-//     elem.addEventListener('click', function func(){
-//         let input = document.createElement('input');
-//         input.value = elem.textContent;
-//         elem.textContent = '';
-//         elem.appendChild(input);
-//         input.addEventListener('blur', function(){
-//             elem.textContent = input.value;
-//             elem.addEventListener('click', func);
-//         });
-//         elem.removeEventListener('click', func);
-//     });
-// }
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function func(){
-//     let input = document.createElement('input');
-//     input.value = elem.textContent;
-//     elem.innerHTML = '';
-//     elem.appendChild(input);
-//     input.addEventListener('blur', function(){
-//         elem.innerHTML = this.value;
-//         elem.addEventListener('click', func);
-//     });
-
-//     elem.removeEventListener('click', func);
-// });
-
-
-
-// let elem = document.querySelector('#elem');
-
-// elem.addEventListener('click', function(){
-//     let input = document.createElement('input');
-//     input.value = elem.textContent;
+// function createTable(rows, cols) {
+// 	let table = document.createElement('table');
+	
     
-//     input.addEventListener('blur', function(){
-//         elem.textContent = this.value;
-//         this.parentElement.removeChild(this);
-//     });
-//     elem.parentElement.appendChild(input);
-// })
-
-
-
-
-// let elem = document.querySelector('#elem');
-// let input = document.querySelector('#input');
-
-// input.value = elem.innerHTML; // записываем в инпут текст абзаца
-
-// input.addEventListener('input', function() {
-// 	elem.innerHTML = this.value;
-// });
-
-
-
-
-// let elem1 = document.querySelector('#elem1');
-// let elem2 = document.querySelector('#elem2');
-// console.log(elem1.contains(elem2));
-
-
-
-
-
-
-
-
-
-// let paragraph = document.querySelector('.paragraph');
-// console.log(paragraph.matches('p'));
-
-
-
-
-
-// let elem = document.querySelector('#elem');
-// console.log(elem.matches('div.www'));
-
-
-
-// let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     let clone = elem.cloneNode(true);
-//     btn.insertAdjacentElement('afterEnd', clone);
-// });
-
-
-
-
-
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.insertAdjacentHTML('beforeBegin','<div class="www"><p>text</p><p>text</p><input></div>');
-
-
-// let elem = document.querySelector('#elem');
-// let paragraph = document.createElement('p');
-// paragraph.innerHTML = '!!!';
-// // elem.insertAdjacentElement('beforeBegin', paragraph);
-// // elem.insertAdjacentElement('afterEnd', paragraph);
-// // elem.insertAdjacentElement('afterBegin', paragraph);
-// // elem.insertAdjacentElement('beforeEnd', paragraph);
-
-
-
-// let parent = document.querySelector('#parent');
-// let elem = document.querySelector('#elem');
-// let news = document.createElement('li');
-// news.innerHTML = 'new';
-// parent.insertBefore(news,elem);
-// news.addEventListener('click', function(){
-//     news.innerHTML += '!';
-// });
-
-
-
-// let elem = document.querySelector('#elem');
-// let start = document.createElement('li');
-// start.innerHTML = 'start';
-// let finish = document.createElement('li');
-// finish.innerHTML = 'finish';
-// elem.append(finish);
-// elem.prepend(start);
-
-
-
-
-// let trs = document.querySelectorAll('#table tr');
-// for(let tr of trs){
-//     let td = document.createElement('td');
-//     let remove = document.createElement('a');
-//     remove.href = '#';
-//     remove.innerHTML = 'remove';
-//     td.appendChild(remove);
-//     tr.appendChild(td);
-// remove.addEventListener('click', function(event){
-//     tr.parentElement.removeChild(tr);
-//     event.preventDefault();
-// });
-// }
-
-
-
-
-
-
-// let elems = document.querySelectorAll('#parent li');
-// for(let elem of elems){
-//     let remove = document.createElement('a');
-//     remove.href = '#';
-//     remove.innerHTML = ' remove';
-//     elem.appendChild(remove);
-//     remove.addEventListener('click', function(event){
-//         elem.parentElement.removeChild(elem);
-//         remove.preventDefault();
-//     });
-// }
-
-
-
-
-
-
-
-// let parent = document.querySelector('#parent');
-// let elem = document.querySelector('#elem');
-// let remove = document.querySelector('#remove');
-// remove.addEventListener('click', function(event){
-//     event.preventDefault();
-//     parent.removeChild(elem);
-// });
-
-
-
-// let parent = document.querySelector('#parent');
-// let btn = document.querySelector('#button');
-// btn.addEventListener('click', function(){
-//     let li = document.createElement('li');
-//     parent.appendChild(li);
-//     let elems = document.querySelectorAll('#parent li');
-//     let k = elems.length;
-//     li.innerHTML = k;
-// for(let elem of elems){
-//     elem.addEventListener('click', function(){
-//         parent.removeChild(elem);
-//     });
-// }
-// console.log(elems);
-// });
-
-
-
-
-
-// let parent = document.querySelector('#parent');
-// let elems = document.querySelectorAll('#parent li');
-// for(let elem of elems){
-//     elem.addEventListener('click', function(){
-//         parent.removeChild(elem);
-//     });
-// }
-
-
-
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(){
-//     elem.remove();
-// });
-
-// let elem = document.querySelector('#elem');
-// elem.addEventListener('click', function(){
-//     elem.parentElement.removeChild(elem);
-// });
-
-
-
-
-
-// let parent = document.querySelector('#parent');
-// let btn = document.querySelector('#button');
-// btn.addEventListener('click', function(){
-//     parent.removeChild(parent.lastElementChild);
-// })
-
-
-
-
-// let parent = document.querySelector('#parent');
-// let elem = document.querySelector('#elem');
-// let button = document.querySelector('#button');
-
-// button.addEventListener('click', function(){
-//     parent.removeChild(elem);
-// });
-
-
-
-
-
-
-// let tds = document.querySelectorAll('#table td');
-// let i = 1;
-// for (let td of tds) {
-// 	td.addEventListener('click', function() {
-// 		this.innerHTML = i;
-// 		if (i != 3) {
-// 			i++;
-// 		} 
-//         else {
-// 			i = 1;
+// 	for (let i = 0; i < rows;i++) {
+//         let tr = document.createElement('tr');
+// 		for (let j = 0; j < cols; j++) {
+// 			let td = document.createElement('td');
+//             tr.appendChild(td);
 // 		}
-// 	});
+//         table.appendChild(tr);
+// 	}
+	
+// 	return table;
 // }
 
 
 
 
-// let tds = document.querySelectorAll('#table td');
+// let div = document.querySelector('#elem');
 
-// let i = 1;
-// for (let td of tds) {
-// 	td.addEventListener('click', function func() {
-// 		this.innerHTML = i;
-// 		i++;
-//         td.removeEventListener('click', func);
-// 	});
+// let table = createTable(3, 4);
+// table.style.backgroundColor = 'red';
+
+// div.appendChild(table);
+
+// function createTable(rows, cols) {
+// 	let table = document.createElement('table');
+	
+    
+// 	for (let i = 0; i < rows;i++) {
+//         let tr = document.createElement('tr');
+// 		for (let j = 0; j < cols; j++) {
+// 			let td = document.createElement('td');
+//             tr.appendChild(td);
+// 		}
+//         table.appendChild(tr);
+// 	}
+	
+// 	return table;
+// }
+
+
+// let div = document.querySelector('#elem');
+// createTable(3, 4, div);
+
+// let div1 = document.querySelector('#elem1');
+// createTable(3, 4, div1);
+
+// let div2 = document.querySelector('#elem2');
+// createTable(5, 6, div2);
+
+// function createTable(rows, cols, parent) {
+// 	let table = document.createElement('table');
+	
+// 	// тут создадим таблицу с rows рядами и cols колонками
+    
+// 	for (let i = 0; i < rows;i++) {
+//         let tr = document.createElement('tr');
+// 		for (let j = 0; j < cols; j++) {
+// 			let td = document.createElement('td');
+//             tr.appendChild(td);
+// 		}
+//         table.appendChild(tr);
+// 	}
+	
+// 	parent.appendChild(table);
 // }
 
 
 
 
 
-// let tds = document.querySelectorAll('#table td');
-// for(let i = tds.length-1,k = 0; i >= 0; i--,k++){
-//     tds[k].addEventListener('click', function(){
-//         this.innerHTML = i;
-//     });
-// }
-
-
-
-// let trs = document.querySelectorAll('#table tr');
-
-// for(let i = 0; i < trs.length; i++){
-//     let tr = trs[i];
-//     let tds = tr.querySelectorAll('td');
-//     for(let j = 0; j < tds.length; j++){
-//         let td = tds[j];
-//         td.innerHTML = j;
+// let elem = document.querySelector('#elem');
+// let arr = [55,66,77];
+// function appendElem(elem,arr){
+//     for(let i = 0; i<arr.length; i++){
+//         let li = document.createElement('li');
+//         li.innerHTML = arr[i];
+//         elem.appendChild(li);
 //     }
 // }
+// appendElem(elem, arr);
+
+// let elem = document.querySelector('#elem');
+// function appendElem(elem,text){
+//     let li = document.querySelector('li');
+//     li.innerHTML = text;
+//     elem.appendChild(li);
+// }
+// appendElem(elem, 'lik');
+
+// let elems = document.querySelectorAll('.elem');
+// appendText(elems, 'lol');
+// function appendText(elems, text){
+// for(let elem of elems){
+//     elem.innerHTML += text;
+// }
+// }
+
+
+
+// let input = document.querySelector('#elem');
+// setValue(input, 'texts');
+
+// function setValue(input, text){
+// input.value = text;
+// }
 
 
 
 
-// let trs = document.querySelectorAll('#table tr');
+// let elems = document.querySelectorAll('.elem');
+// for(let elem of elems){
+//     appendText(elem, 'lolchic' );
+// }
 
-// for (let i = 0; i < trs.length; i++) {
-// 	let tr = trs[i];
-// 	let tds = tr.querySelectorAll('td');
+// function appendText(elem, text){
+//     elem.innerHTML += text;
+// }
+
+// forEach('.elem', function(elem, index) {
+// 	elem.innerHTML = index + elem.innerHTML ;
+// });
+
+
+// function forEach(selector, func) {
+// 	let elems = document.querySelectorAll(selector);
 	
-// 	for (let j = 0; j < tds.length; j++) {
-// 		let td = tds[j];
-// 		td.innerHTML = i + '.' + j;
+// 	for (let i = 0; i < elems.length; i++) {
+// 		func(elems[i], i);
 // 	}
 // }
 
 
 
-
-// let tds = document.querySelectorAll('#table td');
-// let arr = [];
-// let k = 0;
-//     for(let j = tds.length; j > 0; j--){
-//         arr.push(j);
-//         tds[k].innerHTML = j;
-//         k++;
-//     }         
-// console.log(arr);
-
-
-
-// let tds = document.querySelectorAll('#table td');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     for(let td of tds){
-//         td.innerHTML = Number(td.innerHTML) * 2;
-
-        
-//     }
+// forEach('.elem', function(elem) {
+// 	elem.innerHTML +='!';
 // });
 
 
-
-// let table = document.querySelector('#table');
-// let btn = document.querySelector('#btn');
-
-// btn.addEventListener('click', function(){
-    
-// let tr = document.createElement('tr');
-// table.appendChild(tr);
-// let trs = document.querySelectorAll('#table tr');
-
-// for(let i = 1; i < trs.length; i++){
-//     let td = document.createElement('td');
-//     tr.appendChild(td);
+// function forEach(selector, func) {
+// 	let elems = document.querySelectorAll(selector);
+	
+// 	for (let elem of elems) {
+// 		func(elem);
+// 	}
 // }
-// for(let tr of trs){ 
-//     let td = document.createElement('td');
-//     tr.appendChild(td);
-
-// }
-// })
 
 
 
-// let table = document.querySelector('#table');
-// let btn = document.querySelector('#btn');
-
-// btn.addEventListener('click', function(){
-//     let tr = document.createElement('tr');
-//     for(let i = 0; i < 5;i++){
-//         let td = document.createElement('td');
-//         td.innerHTML = i;
-//         tr.appendChild(td);
-//     }
-//     table.appendChild(tr);
+// forEach('.elem', function(elem) {
+// 	elem.innerHTML = elem.innerHTML ** 2;
 // });
 
 
-// let employees = [
-// 	{name: 'employee1', age: 30, salary: 400},
-// 	{name: 'employee2', age: 31, salary: 500},
-// 	{name: 'employee3', age: 32, salary: 600},
-// ];
-// let table = document.querySelector('#table');
-// for(let employee of employees){
-//     let tr = document.createElement('tr');
-
-//     let td1 = document.createElement('td');
-//     td1.textContent = employee.name;
-//     tr.appendChild(td1);
-
-//     let td2 = document.createElement('td');
-//     td2.textContent = employee.age;
-//     tr.appendChild(td2);
-
-//     let td3 = document.createElement('td');
-//     td3.textContent = employee.salary;
-//     tr.appendChild(td3);
-
-//     table.appendChild(tr);
-
-//     td2.addEventListener('click', function(){
-//         this.textContent++;
-//     });
-//     td3.addEventListener('click', function(){
-//         this.textContent*=1.1;
-//     });
+// function forEach(selector, func) {
+// 	let elems = document.querySelectorAll(selector);
+	
+// 	for (let elem of elems) {
+// 		func(elem);
+// 	}
 // }
 
 
-
-// let employees = [
-// 	{name: 'employee1', age: 30, salary: 400},
-// 	{name: 'employee2', age: 31, salary: 500},
-// 	{name: 'employee3', age: 32, salary: 600},
-// ];
-// let table = document.querySelector('#table');
-// for(let employee of employees){
-//     let tr = document.createElement('tr');
-
-//     let td1 = document.createElement('td');
-//     td1.textContent = employee.name;
-//     tr.appendChild(td1);
-
-//     let td2 = document.createElement('td');
-//     td2.textContent = employee.age;
-//     tr.appendChild(td2);
-
-//     let td3 = document.createElement('td');
-//     td3.textContent = employee.salary;
-//     tr.appendChild(td3);
-
-//     table.appendChild(tr);
-
-//     td2.addEventListener('click', function(){
-//         this.textContent++;
-//     });
-// }
-
-
-
-// let employees = [
-// 	{name: 'employee1', age: 30, salary: 400},
-// 	{name: 'employee2', age: 31, salary: 500},
-// 	{name: 'employee3', age: 32, salary: 600},
-// ];
-// let table = document.querySelector('#table');
-// for(let employee of employees){
-//     let tr = document.createElement('tr');
-
-//     let td1 = document.createElement('td');
-//     td1.textContent = employee.name;
-//     tr.appendChild(td1);
-
-//     let td2 = document.createElement('td');
-//     td2.textContent = employee.age;
-//     tr.appendChild(td2);
-
-//     let td3 = document.createElement('td');
-//     td3.textContent = employee.salary;
-//     tr.appendChild(td3);
-
-//     table.appendChild(tr);
-// }
-
-
-// let table = document.querySelector('#table');
-// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
-
-// for(let subArr of arr){
-//     let tr = document.createElement('tr');
-//     for(let elem of subArr){
-//         let td = document.createElement('td');
-//         td.innerHTML = elem ** 2;
-//         tr.appendChild(td);
+// function appendText(select,text){
+// let elems = document.querySelectorAll(select);
+//     for(let elem of elems){
+//         elem.innerHTML += text;
 //     }
-//     table.appendChild(tr);
 // }
 
 
-
-// let table = document.querySelector('#table');
-// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
-
-// for(let subArr of arr){
-//     let tr = document.createElement('tr');
-//     for(let elem of subArr){
-//         let td = document.createElement('td');
-//         td.innerHTML = elem;
-//         tr.appendChild(td);
-//     }
-//     table.appendChild(tr);
+// function setText(select, text) {
+// 	let elem = document.querySelector(select);
+// 	elem.innerHTML = text;
 // }
 
-
-// let table = document.querySelector('#table');
-// let k = 2;
-// for(let i = 0; i<5; i++){
-//     let tr = document.createElement('tr');
-//     for(let j = 0; j < 5; j++){
-//         let td = document.createElement('td');
-//         td.innerHTML = k;
-//         k+=2;
-//         tr.appendChild(td);
-//     }
-//     table.appendChild(tr);
+// function setAttr(select, name, value){
+//     let elem = document.querySelector(select);
+//     elem.name = value;
 // }
-
-// let table = document.querySelector('#table');
-// let k = 1;
-// for(let i = 0; i<5; i++){
-//     let tr = document.createElement('tr');
-//     for(let j = 0; j < 5; j++){
-//         let td = document.createElement('td');
-//         td.innerHTML = k;
-//         k++;
-//         tr.appendChild(td);
-//     }
-//     table.appendChild(tr);
-// }
-
-
-// let one = document.querySelector('#one');
-// let two = document.querySelector('#two');
-// let table = document.querySelector('#table');
-// one.addEventListener('blur',function(){
-//     arrFunc();
-// });
-// two.addEventListener('blur',function(){
-//     arrFunc();
-// });
-// function arrFunc(){
-//     for(let i =0; i < Number(one.value); i++){
-//     let tr = document.createElement('tr');
-//     for(let j = 0; j < Number(two.value); j++){
-//         let td = document.createElement('td');
-//         tr.appendChild(td);
-//         td.innerHTML = 'x';
-//     }
-//     table.appendChild(tr);
-// }
-// }
-
-
-
-// let table = document.querySelector('#table');
-// for(let i =0; i <10; i++){
-//     let tr = document.createElement('tr');
-//     for(let j = 0; j < 5; j++){
-//         let td = document.createElement('td');
-//         tr.appendChild(td);
-//         td.innerHTML = j;
-//     }
-//     table.appendChild(tr);
-// }
-
-// let table = document.querySelector('#table');
-// for(let i =0; i <5; i++){
-//     let tr = document.createElement('tr');
-//     for(let j = 0; j < 5; j++){
-//         let td = document.createElement('td');
-//         tr.appendChild(td);
-//         td.innerHTML = j;
-//     }
-//     table.appendChild(tr);
-// }
-
-
-
-
-
-
-// let elem = document.querySelector('#elem');
-// let arr = [1,2,3,4,5];
-// for(let i = 0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.innerHTML = arr[i];  
-//     elem.appendChild(li);
-//     li.addEventListener('click', function func(){
-//        li.textContent += '!';
-//        this.removeEventListener('click', func);
-//     });
-// }
-
-
-
-
-// let elem = document.querySelector('#elem');
-// let arr = [1,2,3,4,5];
-// for(let i = 0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.innerHTML = arr[i];  
-//     elem.appendChild(li);
-//     li.addEventListener('click', function(){
-//         alert(li.textContent);
-//     });
-// }
-
-
-// let elem = document.querySelector('#elem');
-// let arr = [1,2,3,4,5];
-// for(let i = 0; i < arr.length; i++){
-//     let li = document.createElement('li');
-//     li.innerHTML = arr[i];  
-//     elem.appendChild(li);
-// }
-
-
-// let parent = document.querySelector('#parent');
-// let arr = [1, 2, 3, 4, 5];
-// for (let elem of arr) {
-// 	let p = document.createElement('p');
-// 	p.innerHTML = elem;	
-// 	parent.appendChild(p);
-//     p.addEventListener('click', function(){
-//         p.innerHTML++;
-//     });
-// }
-
-
-
-// let elem = document.querySelector('#elem');
-// let paragraph = document.querySelector('#paragraph');
-// for(let i = 1; i <= 5; i++){
-//     let input = document.createElement('input');
-//     input.value = i;
-// input.addEventListener('blur', function(){
-//     paragraph.innerHTML += this.value;
-// });
-//     elem.appendChild(input); 
-// }
-
-
-
-// let elem = document.querySelector('#elem');
-// for(let i = 1; i<= 10; i++){
-//     let li = document.createElement('li');
-//     li.innerHTML = i;
-//     elem.appendChild(li);
-// }
-
-
-// let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#btn');
-// btn.addEventListener('click', function(){
-//     let li = document.createElement('li');
-//     li.innerHTML = 'text';
-//     elem.appendChild(li);
-//     li.addEventListener('click', function(){
-//         li.innerHTML +='!';
-//     });
-// });
-
-
-
-// let elem = document.querySelector('#elem');
-// let btn = document.querySelector('#button');
-
-// let li = document.createElement('li');
-// li.innerHTML = 'пункт';
-// btn.addEventListener('click', function(){
-//     elem.appendChild(li);
-// });
-
-
-// let elem = document.querySelector('#elem');
-// let li = document.createElement('li');
-// li.innerHTML = 'пункт';
-// elem.appendChild(li);
 
 
 
